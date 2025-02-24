@@ -1,0 +1,62 @@
+@page "/Withdrawal"
+@layout MainLayout
+
+<div class="main-container container">
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 mx-auto">
+            <div class="card card-light shadow-sm mb-4">
+
+
+                <div class="row mb-4">
+                    <div class="col-6">
+                        <h5 class="text-color-theme m-3">موجودی حساب</h5>
+                    </div>
+                    <div class="col-6">
+                        <h5 class="m-3">12000 تومان </h5>
+                    </div>
+
+                </div>
+
+
+
+                <div class="card-body">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="pincode"
+                            placeholder="مقدار وجه درخواستی را وارد کنید">
+                        <label for="pincode">مبلغ (تومان)</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="CardNumber"
+                            placeholder="شماره کارت را وارد کنید : ">
+                        <label for="CardNumber">شماره کارت</label>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <!-- description -->
+                    <div class="row mb-3">
+                        <div class="col">
+                            <h4 class="text-color-theme mb-0">توجه</h4>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-12">
+                            <p class="text-opac">شماره کارت <b>فقط</b> متعلق به ثبت نام شده در اکانت باشد</p>
+                            <p class="text-opac">درصورت ثبت نام ناقص ، لطفا در قسمت<a href="/profile" style="color: black; font-weight: bolder;">
+                                    ویرایش پروفایل</a> اطلاعات رو
+                                کامل کنید</p>
+                            <p class="text-opac small">** حداقل برداشت مبلغ 100 هزار تومن میباشد. مبلغ حداکثر تا
+                                24 ساعت به حساب بانکی شما واریز خواهد شد</p>
+                        </div>
+                    </div>
+                    <div class="d-grid"><a href="changeaddress.html" class="btn btn-lg btn-default shadow-sm">تایید
+                            و ثبت درخواست</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</div>

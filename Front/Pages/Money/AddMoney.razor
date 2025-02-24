@@ -1,0 +1,194 @@
+@page "/AddMoney"
+@layout MainLayout
+@inject NavigationManager Navigation
+@using System.Text.Json
+
+<!-- Header -->
+<header class="container-fluid header">
+    <div class="row h-100">
+        <div class="col-auto align-self-center">
+            <a href="profile.html" class="btn btn-link back-btn text-color-theme" style="color: #FF1C52;">
+                <i class="bi bi-arrow-right size-20"></i>
+            </a>
+        </div>
+        <div class="col text-center align-self-center">
+            <h5 class="mb-0">پول اضافه کنید</h5>
+        </div>
+        <div class="col-auto align-self-center">
+            <a href="cart.html" class="link text-color-theme" style="color: #FF1C52;">
+                <i class="bi bi-gear size-22"></i>
+            </a>
+        </div>
+    </div>
+</header>
+<!-- Header ends -->
+
+<!-- main page content -->
+<div class="main-container container">
+    <!--amount -->
+    <div class="row mt-4">
+        <div class="col text-center">
+            <h5 class="mb-0">موجودی حساب</h5>
+        </div>
+    </div>
+
+    <div class="row ">
+        <div class="col text-center">
+            <input type="number" class="amountfield" id="amount" placeholder="0" value="500000" readonly>
+        </div>
+    </div>
+
+    <div class="row mb-5">
+        <div class="col text-center">
+            <h5 class="mb-0">تومان</h5>
+        </div>
+    </div>
+
+
+    <!-- Coupon code -->
+    <!-- <div class="row mb-3">
+                <div class="col align-self-center">
+                    <h5 class="mb-0">کد کوپن را اعمال کنید</h5>
+                </div>
+                <div class="col-auto pe-0">
+                    <a href="home.html" class="link text-color-theme" style="color: #FF1C52;">ارائه می دهد <i class="bi bi-chevron-left"></i></a>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control is-valid" id="couponcode" placeholder="کد کوپن" value="فصل 1">
+                        <label for="couponcode">کد کوپن</label>
+                        <button type="button" class="btn btn-link text-success tooltip-btn valid-tooltip" data-bs-toggle="tooltip" data-bs-placement="left" title="" data-bs-original-title="Email is valid">
+                            <i class="bi bi-check-circle"></i>
+                        </button>
+                    </div>
+                </div>
+            </div> -->
+
+    <!-- Payment Proccess -->
+    <div class="row mb-3">
+        <div class="col align-self-center">
+            <h5 class="mb-0">حالت های پرداخت</h5>
+        </div>
+    </div>
+    <div class="row mb-2">
+        @foreach (IncomingCard card in cards)
+        {
+            <div class="col-12 col-md-6 col-lg-3">
+                <a @onclick="() => NavigateToCart(card)" class="card shadow-sm mb-3 product text-normal">
+                    <div class="card-body">
+                        <div class="row">
+                            <!-- <div class="col-auto">
+                                            <figure class="text-center mb-0 avatar avatar-40 page-bg rounded p-1">
+                                                <img src="assets/img/maestro.png" alt="">
+                                            </figure>
+                                        </div> -->
+                            <div class="col align-self-center">
+                                <p>کارت به کارت <br><small class="text-opac mt-1"><b>@card.CardNumber</b><br>@card.CardBank / @card.CardName</small>
+                                </p>
+                            </div>
+                            <div class="col-auto align-self-center">
+                                <i class="bi bi-chevron-left text-color-theme" style="color: #FF1C52;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        }
+        <div class="col-12 col-md-6 col-lg-3">
+            <a href="#" class="card shadow-sm mb-3 product text-normal">
+                <div class="card-body">
+                    <div class="row">
+                        <!-- <div class="col-auto">
+                                    <figure class="text-center mb-0 avatar avatar-40 page-bg rounded p-1">
+                                        <img src="assets/img/visa.png" alt="">
+                                    </figure>
+                                </div> -->
+                        <div class="col align-self-center">
+                            <p>درگاه بانکی <br><small class="text-opac">زمان شارژ در حالت درگاه بانکی آنلاین
+                                    میباشد</small></p>
+                        </div>
+                        <div class="col-auto align-self-center">
+                            <i class="bi bi-chevron-left text-color-theme" style="color: #FF1C52;"></i>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <a href="#" class="card shadow-sm mb-3 product text-normal">
+                <div class="card-body">
+                    <div class="row">
+                        <!-- <div class="col-auto">
+                                    <figure class="text-center mb-0 avatar avatar-40 page-bg rounded p-1">
+                                        <img src="assets/img/americanexp.png" alt="">
+                                    </figure>
+                                </div> -->
+                        <div class="col align-self-center">
+                            <p>کد هدیه <br><small class="text-opac">وارد کردن کد هدیه</small></p>
+                        </div>
+                        <div class="col-auto align-self-center">
+                            <i class="bi bi-chevron-left text-color-theme" style="color: #FF1C52;"></i>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+
+    <!-- Button -->
+    <!-- <div class="row mb-3">
+                <div class="col align-self-center d-grid">
+                    <a href="profile.html" class="btn btn-default btn-lg shadow-sm">ادامه دهید</a>
+                </div>
+            </div> -->
+
+</div>
+<!-- main page content ends -->
+
+@code {
+    private List<IncomingCard> cards = [];
+    protected override async Task OnInitializedAsync()
+    {
+        await FillCard();
+    }
+    private async Task FillCard() //بعدا از بک اند میگیریم اینو #تکمیلی
+    {
+        await Task.Delay(1000);
+        cards.Add(new IncomingCard
+        {
+            Id = 1,
+            CardBank = "پاسارگاد",
+            CardName = "ابوالفضل سمنانی",
+            CardNumber =
+        "5022-2913-2412-0326"
+        });
+        cards.Add(new IncomingCard { Id = 2, CardBank = "ملت", CardName = "رحیم قاسمی", CardNumber = "5022-2913-2412-0326" });
+        cards.Add(new IncomingCard
+        {
+            Id = 3,
+            CardBank = "بانک شهر",
+            CardName = "علی علوی",
+            CardNumber = "5022-2913-2412-0326"
+        });
+        cards.Add(new IncomingCard
+        {
+            Id = 4,
+            CardBank = "بانک کشاورزی",
+            CardName = "ابوالفضل سمنانی",
+            CardNumber =
+        "5022-2913-2412-0326"
+        });
+    }
+    
+    private void NavigateToCart(IncomingCard card)
+    {
+        string cardJson = JsonSerializer.Serialize(card);
+
+        string cardBase64 = Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes(cardJson));
+
+        Navigation.NavigateTo($"/CartToCart?card={cardBase64}");
+    }
+}

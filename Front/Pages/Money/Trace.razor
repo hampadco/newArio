@@ -1,0 +1,77 @@
+@page "/trace"
+@layout MainLayout
+
+<div class="main-container container">
+    <!-- Ordernumber  -->
+    <div class="row mb-3">
+        <div class="col">
+            <p class="text-opac">گزارشات مالی</p>
+        </div>
+        <div class="col-auto text-end">
+            <p class="text-opac">تعداد تراکنشات : @history.Count</p>
+        </div>
+    </div>
+
+    <!-- items -->
+    <div class="row ">
+        <div class="col-12">
+            <div class="card card-light shadow-sm mb-4">
+                <ul class="list-group">
+                    @foreach(TraceHistory trace in history){
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="mb-1 fw-bold">@trace.title</p>
+                                    <p class="text-opac">@trace.Date</p>
+                                </div>
+                                <div class="col-auto mt-3">@trace.Price
+                                    @if(trace.IsWaste){
+                                        <i class="bi bi-dash fs-5" style="color: red;"></i>
+                                    }
+                                    else{
+                                        <i class="bi bi-plus fs-5" style="color: green;"></i>
+                                    }
+                                </div>
+                            </div>
+                        </li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- pricing -->
+
+
+    <!-- Button -->
+    <div class="row mb-4">
+        <div class="col-12 col-md-6 col-lg-4 mx-auto">
+            <div class="row">
+                <div class="col align-self-center d-grid">
+                    <a href="/AddMoney" class="btn btn-default shadow-sm">افزودن موجودی</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+@code {
+    private List<TraceHistory> history = [];
+    protected override async Task OnInitializedAsync()
+    {
+        await FillHistory();
+    }
+    private async Task FillHistory()
+    {
+        await Task.Delay(500);
+        history.Add(new TraceHistory{Id = 1 , Date = "یکشنبه 4 آبان 1400" , Price = "100000 تومان" , title="شارژ موجودی / کارت به کارت" ,IsWaste=false});
+        history.Add(new TraceHistory{Id = 2 , Date = "دوشنبه 5 آبان 1400" , Price = "200000 تومان" , title="شارژ موجودی / کارت به کارت",IsWaste=false});
+        history.Add(new TraceHistory{Id = 3 , Date = "چهارشنبه 7 آبان 1400" , Price = "10000 تومان" , title="شارژ موجودی / کارت به کارت",IsWaste=false});
+        history.Add(new TraceHistory{Id = 4 , Date = "پنجشنبه 8 آبان 1400" , Price = "10000 تومان" , title="شارژ موجودی / کارت به کارت",IsWaste=false});
+        history.Add(new TraceHistory{Id = 5 , Date = "یکشنبه 12 آبان 1400" , Price = "500000 تومان" , title="شارژ موجودی / کارت به کارت",IsWaste=false});
+        history.Add(new TraceHistory{Id = 6 , Date = "یکشنبه 23 آبان 1400" , Price = "1000 تومان" , title="شارژ موجودی / کارت به کارت",IsWaste=false});
+        history.Add(new TraceHistory{Id = 7 , Date = "یکشنبه 23 آبان 1400" , Price = "1000 تومان" , title="شرکت در مسابقه اریو / حق ورودی",IsWaste=true});
+        history.Add(new TraceHistory{Id = 8 , Date = "یکشنبه 23 آبان 1400" , Price = "5000 تومان" , title="شرکت در مسابقه اریو / جایزه نفر اول",IsWaste=false});
+    }
+}

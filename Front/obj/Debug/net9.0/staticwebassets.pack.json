@@ -1,0 +1,417 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\obj\\Debug\\net9.0\\scopedcss\\bundle\\Front.styles.css",
+      "PackagePath": "staticwebassets\\Front.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\assets\\css\\style-blue.css",
+      "PackagePath": "staticwebassets\\assets\\css\\style-blue.css"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\assets\\css\\style-green.css",
+      "PackagePath": "staticwebassets\\assets\\css\\style-green.css"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\assets\\css\\style-red.css",
+      "PackagePath": "staticwebassets\\assets\\css\\style-red.css"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\assets\\css\\style-yellow.css",
+      "PackagePath": "staticwebassets\\assets\\css\\style-yellow.css"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\assets\\css\\style.css",
+      "PackagePath": "staticwebassets\\assets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\assets\\css\\style.css.bak",
+      "PackagePath": "staticwebassets\\assets\\css\\style.css.bak"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\assets\\font\\IRANSansWeb(FaNum).ttf",
+      "PackagePath": "staticwebassets\\assets\\font\\IRANSansWeb(FaNum).ttf"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\assets\\font\\bootstrap-icons.css",
+      "PackagePath": "staticwebassets\\assets\\font\\bootstrap-icons.css"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\assets\\font\\fonts\\bootstrap-icons.woff2",
+      "PackagePath": "staticwebassets\\assets\\font\\fonts\\bootstrap-icons.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\assets\\img\\404.png",
+      "PackagePath": "staticwebassets\\assets\\img\\404.png"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\assets\\img\\Lattary.png",
+      "PackagePath": "staticwebassets\\assets\\img\\Lattary.png"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\assets\\img\\background1@2x.png",
+      "PackagePath": "staticwebassets\\assets\\img\\background1@2x.png"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\assets\\img\\background2@2x.png",
+      "PackagePath": "staticwebassets\\assets\\img\\background2@2x.png"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\assets\\img\\background3@2x.png",
+      "PackagePath": "staticwebassets\\assets\\img\\background3@2x.png"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\assets\\img\\bgshapes.png",
+      "PackagePath": "staticwebassets\\assets\\img\\bgshapes.png"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\assets\\img\\bgshapes2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\bgshapes2.png"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\assets\\img\\contactus.png",
+      "PackagePath": "staticwebassets\\assets\\img\\contactus.png"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\assets\\img\\debit.png",
+      "PackagePath": "staticwebassets\\assets\\img\\debit.png"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\assets\\img\\favicon16.png",
+      "PackagePath": "staticwebassets\\assets\\img\\favicon16.png"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\assets\\img\\favicon180.png",
+      "PackagePath": "staticwebassets\\assets\\img\\favicon180.png"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\assets\\img\\favicon32.png",
+      "PackagePath": "staticwebassets\\assets\\img\\favicon32.png"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\assets\\img\\finance.png",
+      "PackagePath": "staticwebassets\\assets\\img\\finance.png"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\assets\\img\\game.png",
+      "PackagePath": "staticwebassets\\assets\\img\\game.png"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\assets\\img\\list.png",
+      "PackagePath": "staticwebassets\\assets\\img\\list.png"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\assets\\img\\logo.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\assets\\img\\logout.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logout.png"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\assets\\img\\payment.png",
+      "PackagePath": "staticwebassets\\assets\\img\\payment.png"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\assets\\img\\profile.png",
+      "PackagePath": "staticwebassets\\assets\\img\\profile.png"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\assets\\img\\progress.png",
+      "PackagePath": "staticwebassets\\assets\\img\\progress.png"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\assets\\img\\rule.png",
+      "PackagePath": "staticwebassets\\assets\\img\\rule.png"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\assets\\js\\app.js",
+      "PackagePath": "staticwebassets\\assets\\js\\app.js"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\assets\\js\\color-scheme.js",
+      "PackagePath": "staticwebassets\\assets\\js\\color-scheme.js"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\assets\\js\\jquery-3.3.1.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery-3.3.1.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\assets\\js\\jquery.cookie.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.cookie.js"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\assets\\js\\main.js",
+      "PackagePath": "staticwebassets\\assets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\assets\\js\\moment.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\moment.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\assets\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\assets\\js\\pwa-services.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pwa-services.js"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\assets\\vendor\\bootstrap-5\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap-5\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\assets\\vendor\\chart-js-3.3.1\\chart.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\chart-js-3.3.1\\chart.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\assets\\vendor\\daterangepicker\\daterangepicker.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\daterangepicker\\daterangepicker.css"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\assets\\vendor\\daterangepicker\\daterangepicker.css.bak",
+      "PackagePath": "staticwebassets\\assets\\vendor\\daterangepicker\\daterangepicker.css.bak"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\assets\\vendor\\daterangepicker\\daterangepicker.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\daterangepicker\\daterangepicker.js"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\assets\\vendor\\fullcalendar-5.7\\main.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fullcalendar-5.7\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\assets\\vendor\\fullcalendar-5.7\\main.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fullcalendar-5.7\\main.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\assets\\vendor\\nouislider\\nouislider.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\nouislider\\nouislider.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\assets\\vendor\\nouislider\\nouislider.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\nouislider\\nouislider.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\assets\\vendor\\progressbar-js\\progressbar.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\progressbar-js\\progressbar.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\assets\\vendor\\swiperjs-6.6.2\\swiper-bundle.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\swiperjs-6.6.2\\swiper-bundle.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\assets\\vendor\\swiperjs-6.6.2\\swiper-bundle.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\swiperjs-6.6.2\\swiper-bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Apple\\Desktop\\Ario-master\\Front\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.Front.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.Front.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.Front.props",
+      "PackagePath": "build\\Front.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.Front.props",
+      "PackagePath": "buildMultiTargeting\\Front.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.Front.props",
+      "PackagePath": "buildTransitive\\Front.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

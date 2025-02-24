@@ -1,0 +1,73 @@
+@page "/ContactUs"
+@layout MainLayout
+
+<div class="main-container container ">
+    <!-- Contact us form -->
+    <div class="row mb-4">
+        <div class="col-12 col-md-6 mx-auto">
+            <h3 class="mb-2 text-center">تماس با ما</h3>
+            <p class="text-opac mb-4 text-center">ما همیشه خوشحالیم که از شما بشنویم! اگر سوال، نظر یا پیشنهادی
+                دارید، لطفاً با ما تماس بگیرید.</p>
+
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="name">
+                <label for="name">نام</label>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="emailaddress">
+                <label for="emailaddress">ایمیل یا شماره تلفن</label>
+            </div>
+            <div class="form-floating  mb-3">
+                <textarea class="form-control h-auto" id="query"></textarea>
+                <label for="query">درخواست شما</label>
+            </div>
+            <a href="/home" target="_self" class="btn btn-default btn-lg w-100">ارسال</a>
+        </div>
+    </div>
+
+    <!-- مشخصات -->
+
+    <div class="row mb-2">
+        <div class="col">
+            <h6 class="my-1">شماره تماس ما: </h6>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-6 mb-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h6 class="text-primary">دفتر مرکزی</h6>
+                    <p class="text-opac">0912-0000000</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-6 mb-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h6 class="text-primary">انبار اصلی</h6>
+                    <p class="text-opac">0912-1111111</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mb-2">
+        <div class="col">
+            <h6 class="my-1">مکان ما: </h6>
+        </div>
+    </div>
+
+    <div class="row justify-content-center mb-6rem">
+        <div class="col-12 col-md-6 mb-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h6 class="text-primary">جانسون</h6>
+                    <p class="text-opac">ایران - تهران - ونک - خیابان بهار</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

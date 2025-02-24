@@ -1,0 +1,203 @@
+@page "/register"
+@using BlazorBootstrap
+@inject UserService s;
+
+
+
+<!doctype html>
+<html lang="en" class="h-100">
+
+
+<!-- signup.html   -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="assets/font/bootstrap-icons.css">
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="assets/vendor/swiperjs-6.6.2/swiper-bundle.min.css">
+
+    <!-- style css for this template -->
+    <link href="assets/css/style.css" rel="stylesheet" id="style">
+
+</head>
+
+<body class="body-scroll d-flex flex-column h-100 dark-bg bg1" data-page="signup">
+
+
+
+    <main class="container-fluid h-100 main-container">
+
+
+        <div class="row h-100">
+            <EditForm Model="@user" OnValidSubmit="@AddNewUser">
+
+                <DataAnnotationsValidator />
+                <div class="col-12 mx-auto text-center" style="margin-top: 80px;">
+                    <div class="row h-100">
+                        <div class="col-10 col-sm-8 col-md-6 col-lg-4 col-xl-3 mx-auto align-self-center">
+
+                            <h4 class="text-center mb-4">ثبت نام</h4>
+                            @if (dis == "show")
+                            {
+
+                                <Alert Color="AlertColor.Success" Dismissable="false">
+                                    <Icon Name="IconName.CheckCircleFill" class="me-2"></Icon>ثبت نام با موفقیت انجام شده
+                                </Alert>
+                            }
+                            @if (dis == "error")
+                            {
+
+                                <Alert Color="AlertColor.Danger" Dismissable="false">
+                                    <Icon Name="IconName.CheckCircleFill" class="me-2"></Icon> @message
+                                </Alert>
+                            }
+                            <div class="card card-light shadow-sm mb-4">
+                                <div class="card-body">
+                                    <form class="">
+                                        <div class="form-floating mb-3">
+                                            <input required @bind="user.Name" type="text" class="form-control"
+                                                placeholder="نام کاربری">
+                                            <label for="username">نام و نام خانوادگی را وارد کنید </label>
+                                            <ValidationMessage For="@(() => user.Name)" />
+                                        </div>
+
+
+                                        <div class="form-floating mb-3">
+                                            <input required @bind="user.PhoneNumber" type="text" class="form-control"
+                                                placeholder="نام کاربری">
+                                            <label for="username"> شماره تلفن را وارد کنید </label>
+                                            <ValidationMessage For="@(() => user.PhoneNumber)" />
+                                        </div>
+
+
+                                        <div class="form-floating mb-3">
+                                            <input required @bind="user.UserName" type="text" class="form-control"
+                                                placeholder="نام کاربری">
+                                            <label for="username"> نام کاربری را وارد کنید </label>
+                                            <ValidationMessage For="@(() => user.UserName)" />
+                                        </div>
+
+
+
+
+                                        <div class="form-floating mb-3">
+                                            <input required @bind="user.Password" type="password" class="form-control"
+                                                id="password" placeholder="رمز عبور شما">
+                                            <label for="password">کلمه عبور</label>
+                                            <ValidationMessage For="@(() => user.Password)" />
+                                        </div>
+
+                                        <div class="form-floating mb-3">
+                                            <input required @bind="user.PasswordCheck" type="password" class="form-control"
+                                                id="password" placeholder="رمز عبور شما">
+                                            <label for="password">تایید کلمه عبور</label>
+                                            <ValidationMessage For="@(() => user.PasswordCheck)" />
+                                        </div>
+
+                                        @if (user.Password != user.PasswordCheck)
+                                        {
+                                            <Alert Color="AlertColor.Warning" Dismissable="false">
+                                                <Icon Name="IconName.XCircleFill" class="me-2"></Icon>کلمه عبور خود را تایید
+                                                کنید
+                                            </Alert>
+                                        }
+
+                                        <div class="form-check mb-3">
+                                            <input required @bind="user.Agree" type="checkbox" class="form-check-input"
+                                                id="termsCheckbox">
+                                            <label class="form-check-label" for="termsCheckbox">
+                                                با <a href="/rules">شرایط و ضوابط</a> موافقم
+                                            </label>
+                                            <ValidationMessage For="@(() => user.Agree)" class="text-warning" />
+                                        </div>
+
+                                    </form>
+
+                                    <div class="d-grid"><button type="submit"
+                                            class="btn btn-lg btn-default shadow-sm">ثبت نام</button></div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </EditForm>
+            <div class="col-12 text-center align-self-end py-2">
+                <div class="row">
+                    <div class="col text-center">
+                        از قبل حساب دارید؟ <a href="/signin" class="btn btn-link px-0 ms-2">ورود<i
+                                class="bi bi-chevron-left"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+
+</body>
+
+
+<!-- signup.html   -->
+
+</html>
+
+
+@code {
+
+    RegisterRequest user = new RegisterRequest();
+    string dis = "none";
+    string message;
+   
+
+
+    private async Task AddNewUser()
+    {
+        if (user.Password == user.PasswordCheck)
+        {
+
+            dis = "none"; // ابتدا پیام مخفی شود
+            message = ""; // مقدار پیام را ریست کنیم
+
+            try
+            {
+                User request = new User(){
+                    Name = user.Name,
+                    Password = user.Password,
+                    PhoneNumber = user.PhoneNumber,
+                    Status = true,
+                    UserName = user.UserName
+                };
+
+                string result = await s.AddUser(request);
+
+                if (result.StartsWith("خطا"))
+                {
+                    message = result; // نمایش پیام خطا
+                    dis = "error"; // فرض بر اینکه این مقدار خطا را نمایش می‌دهد
+                }
+                else
+                {
+                    user = new RegisterRequest(); // ریست کردن اطلاعات کاربر
+                    message = "کاربر با موفقیت اضافه شد";
+                    dis = "show"; // نمایش پیام موفقیت
+                }
+            }
+            catch (Exception ex)
+            {
+                message = $"مشکلی رخ داد: {ex.Message}";
+                dis = "error"; // نمایش پیام خطا
+            }
+        }
+    }
+}
