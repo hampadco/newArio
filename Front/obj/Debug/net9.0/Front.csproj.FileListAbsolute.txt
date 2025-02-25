@@ -5193,8 +5193,6 @@ C:\Users\asemn\Desktop\Ario\newArio\Front\bin\Debug\net9.0\wwwroot\_framework\ru
 C:\Users\asemn\Desktop\Ario\newArio\Front\bin\Debug\net9.0\wwwroot\_framework\ru\Microsoft.CodeAnalysis.resources.jasfdca8tn.wasm
 C:\Users\asemn\Desktop\Ario\newArio\Front\bin\Debug\net9.0\wwwroot\_framework\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.tdscxlwovd.wasm
 C:\Users\asemn\Desktop\Ario\newArio\Front\bin\Debug\net9.0\wwwroot\_framework\ru\Microsoft.CodeAnalysis.Workspaces.resources.6ezvdcd7vr.wasm
-C:\Users\asemn\Desktop\Ario\newArio\Front\bin\Debug\net9.0\wwwroot\_framework\Shared.ti74rqz088.pdb
-C:\Users\asemn\Desktop\Ario\newArio\Front\bin\Debug\net9.0\wwwroot\_framework\Shared.ejpieqbihb.wasm
 C:\Users\asemn\Desktop\Ario\newArio\Front\bin\Debug\net9.0\wwwroot\_framework\System.AppContext.uyzczx3u46.wasm
 C:\Users\asemn\Desktop\Ario\newArio\Front\bin\Debug\net9.0\wwwroot\_framework\System.Buffers.gb72qmeqj8.wasm
 C:\Users\asemn\Desktop\Ario\newArio\Front\bin\Debug\net9.0\wwwroot\_framework\System.ClientModel.8j5eiu0uyl.wasm
@@ -5535,7 +5533,6 @@ C:\Users\asemn\Desktop\Ario\newArio\Front\bin\Debug\net9.0\wwwroot\_framework\Sy
 C:\Users\asemn\Desktop\Ario\newArio\Front\bin\Debug\net9.0\wwwroot\_framework\System.Transactions.Local.2c9m9phvrm.wasm.gz
 C:\Users\asemn\Desktop\Ario\newArio\Front\bin\Debug\net9.0\wwwroot\_framework\System.Private.Xml.zqcpjfk006.wasm.gz
 C:\Users\asemn\Desktop\Ario\newArio\Front\bin\Debug\net9.0\wwwroot\_framework\Microsoft.CodeAnalysis.ux1aktmc0y.wasm.gz
-C:\Users\asemn\Desktop\Ario\newArio\Front\bin\Debug\net9.0\wwwroot\_framework\Shared.ejpieqbihb.wasm.gz
 C:\Users\asemn\Desktop\Ario\newArio\Front\bin\Debug\net9.0\wwwroot\_framework\System.ValueTuple.fwu7iv3lz0.wasm.gz
 C:\Users\asemn\Desktop\Ario\newArio\Front\bin\Debug\net9.0\wwwroot\_framework\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.66fl3oyi5r.wasm.gz
 C:\Users\asemn\Desktop\Ario\newArio\Front\bin\Debug\net9.0\wwwroot\_framework\System.Collections.cgl25682z4.wasm.gz
@@ -5687,7 +5684,6 @@ C:\Users\asemn\Desktop\Ario\newArio\Front\bin\Debug\net9.0\wwwroot\_framework\Mi
 C:\Users\asemn\Desktop\Ario\newArio\Front\bin\Debug\net9.0\wwwroot\_framework\Microsoft.Extensions.DependencyInjection.Abstractions.tjpnkvn3q9.wasm.gz
 C:\Users\asemn\Desktop\Ario\newArio\Front\bin\Debug\net9.0\wwwroot\_framework\System.Linq.Parallel.2d5j3bvyi4.wasm.gz
 C:\Users\asemn\Desktop\Ario\newArio\Front\bin\Debug\net9.0\wwwroot\_framework\System.Net.Security.dejaoqcpgo.wasm.gz
-C:\Users\asemn\Desktop\Ario\newArio\Front\bin\Debug\net9.0\wwwroot\_framework\Shared.ti74rqz088.pdb.gz
 C:\Users\asemn\Desktop\Ario\newArio\Front\bin\Debug\net9.0\wwwroot\_framework\System.Threading.Thread.8svcmv6b7k.wasm.gz
 C:\Users\asemn\Desktop\Ario\newArio\Front\bin\Debug\net9.0\wwwroot\_framework\System.Xml.Serialization.4inb2qu00n.wasm.gz
 C:\Users\asemn\Desktop\Ario\newArio\Front\bin\Debug\net9.0\wwwroot\_framework\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.ygrzigm9ta.wasm.gz
@@ -6738,8 +6734,6 @@ C:\Users\asemn\Desktop\Ario\newArio\Front\obj\Debug\net9.0\compressed\r8u18zi26r
 C:\Users\asemn\Desktop\Ario\newArio\Front\obj\Debug\net9.0\compressed\mwc6cty5nc-tjcz0u77k5.gz
 C:\Users\asemn\Desktop\Ario\newArio\Front\obj\Debug\net9.0\compressed\wnpe1hwqvz-tptq2av103.gz
 C:\Users\asemn\Desktop\Ario\newArio\Front\obj\Debug\net9.0\compressed\z1t5pf4n23-lfu7j35m59.gz
-C:\Users\asemn\Desktop\Ario\newArio\Front\obj\Debug\net9.0\compressed\fj14vhkecm-ejpieqbihb.gz
-C:\Users\asemn\Desktop\Ario\newArio\Front\obj\Debug\net9.0\compressed\xt2ti1utlc-ti74rqz088.gz
 C:\Users\asemn\Desktop\Ario\newArio\Front\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\asemn\Desktop\Ario\newArio\Front\obj\Debug\net9.0\staticwebassets.development.json
 C:\Users\asemn\Desktop\Ario\newArio\Front\obj\Debug\net9.0\staticwebassets.build.endpoints.json
@@ -6754,10 +6748,16 @@ C:\Users\asemn\Desktop\Ario\newArio\Front\obj\Debug\net9.0\Front.dll
 C:\Users\asemn\Desktop\Ario\newArio\Front\obj\Debug\net9.0\refint\Front.dll
 C:\Users\asemn\Desktop\Ario\newArio\Front\obj\Debug\net9.0\Front.pdb
 C:\Users\asemn\Desktop\Ario\newArio\Front\obj\Debug\net9.0\ref\Front.dll
-C:\Users\asemn\Desktop\Ario\newArio\Front\bin\Debug\net9.0\wwwroot\_framework\Front.7k4wot57ha.pdb
-C:\Users\asemn\Desktop\Ario\newArio\Front\bin\Debug\net9.0\wwwroot\_framework\Front.04oghvm0gn.wasm
-C:\Users\asemn\Desktop\Ario\newArio\Front\bin\Debug\net9.0\wwwroot\_framework\Front.04oghvm0gn.wasm.gz
-C:\Users\asemn\Desktop\Ario\newArio\Front\bin\Debug\net9.0\wwwroot\_framework\Front.7k4wot57ha.pdb.gz
-C:\Users\asemn\Desktop\Ario\newArio\Front\obj\Debug\net9.0\compressed\35toea1p9i-04oghvm0gn.gz
-C:\Users\asemn\Desktop\Ario\newArio\Front\obj\Debug\net9.0\compressed\ajijei7apr-7k4wot57ha.gz
-C:\Users\asemn\Desktop\Ario\newArio\Front\obj\Debug\net9.0\compressed\afbh2ai2x9-dh91a4h70s.gz
+C:\Users\asemn\Desktop\Ario\newArio\Front\bin\Debug\net9.0\wwwroot\_framework\Front.kh0fltyd2m.pdb
+C:\Users\asemn\Desktop\Ario\newArio\Front\bin\Debug\net9.0\wwwroot\_framework\Front.gvzo7mheeu.wasm
+C:\Users\asemn\Desktop\Ario\newArio\Front\bin\Debug\net9.0\wwwroot\_framework\Shared.k22okkk9xq.pdb
+C:\Users\asemn\Desktop\Ario\newArio\Front\bin\Debug\net9.0\wwwroot\_framework\Shared.ylcillx3pi.wasm
+C:\Users\asemn\Desktop\Ario\newArio\Front\bin\Debug\net9.0\wwwroot\_framework\Front.gvzo7mheeu.wasm.gz
+C:\Users\asemn\Desktop\Ario\newArio\Front\bin\Debug\net9.0\wwwroot\_framework\Front.kh0fltyd2m.pdb.gz
+C:\Users\asemn\Desktop\Ario\newArio\Front\bin\Debug\net9.0\wwwroot\_framework\Shared.ylcillx3pi.wasm.gz
+C:\Users\asemn\Desktop\Ario\newArio\Front\bin\Debug\net9.0\wwwroot\_framework\Shared.k22okkk9xq.pdb.gz
+C:\Users\asemn\Desktop\Ario\newArio\Front\obj\Debug\net9.0\compressed\fj14vhkecm-ylcillx3pi.gz
+C:\Users\asemn\Desktop\Ario\newArio\Front\obj\Debug\net9.0\compressed\xt2ti1utlc-k22okkk9xq.gz
+C:\Users\asemn\Desktop\Ario\newArio\Front\obj\Debug\net9.0\compressed\35toea1p9i-gvzo7mheeu.gz
+C:\Users\asemn\Desktop\Ario\newArio\Front\obj\Debug\net9.0\compressed\ajijei7apr-kh0fltyd2m.gz
+C:\Users\asemn\Desktop\Ario\newArio\Front\obj\Debug\net9.0\compressed\afbh2ai2x9-rrmzt6tg7h.gz
