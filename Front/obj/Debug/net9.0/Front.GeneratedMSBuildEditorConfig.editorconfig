@@ -21,69 +21,69 @@ build_property._SupportedPlatformList = browser
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = Front
 build_property.RootNamespace = Front
-build_property.ProjectDir = c:\Users\asemn\Desktop\Ario\newArio\Front\
+build_property.ProjectDir = C:\Users\asemn\Desktop\Ario\newArio\Front\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = false
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = c:\Users\asemn\Desktop\Ario\newArio\Front
+build_property.MSBuildProjectDirectory = C:\Users\asemn\Desktop\Ario\newArio\Front
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[c:/Users/asemn/Desktop/Ario/newArio/Front/App.razor]
+[C:/Users/asemn/Desktop/Ario/newArio/Front/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/asemn/Desktop/Ario/newArio/Front/Pages/Account/Profile.razor]
+[C:/Users/asemn/Desktop/Ario/newArio/Front/Pages/Account/Profile.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxQcm9maWxlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/asemn/Desktop/Ario/newArio/Front/Pages/Account/Register.razor]
+[C:/Users/asemn/Desktop/Ario/newArio/Front/Pages/Account/Register.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxSZWdpc3Rlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/asemn/Desktop/Ario/newArio/Front/Pages/Account/Rules.razor]
+[C:/Users/asemn/Desktop/Ario/newArio/Front/Pages/Account/Rules.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxSdWxlcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/asemn/Desktop/Ario/newArio/Front/Pages/Account/Signin.razor]
+[C:/Users/asemn/Desktop/Ario/newArio/Front/Pages/Account/Signin.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxTaWduaW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/asemn/Desktop/Ario/newArio/Front/Pages/home/ContactUs.razor]
+[C:/Users/asemn/Desktop/Ario/newArio/Front/Pages/home/ContactUs.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcaG9tZVxDb250YWN0VXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/asemn/Desktop/Ario/newArio/Front/Pages/home/Home.razor]
+[C:/Users/asemn/Desktop/Ario/newArio/Front/Pages/home/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcaG9tZVxIb21lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/asemn/Desktop/Ario/newArio/Front/Pages/Money/AddMoney.razor]
+[C:/Users/asemn/Desktop/Ario/newArio/Front/Pages/Money/AddMoney.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTW9uZXlcQWRkTW9uZXkucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/asemn/Desktop/Ario/newArio/Front/Pages/Money/CartToCart.razor]
+[C:/Users/asemn/Desktop/Ario/newArio/Front/Pages/Money/CartToCart.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTW9uZXlcQ2FydFRvQ2FydC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/asemn/Desktop/Ario/newArio/Front/Pages/Money/Trace.razor]
+[C:/Users/asemn/Desktop/Ario/newArio/Front/Pages/Money/Trace.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTW9uZXlcVHJhY2UucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/asemn/Desktop/Ario/newArio/Front/Pages/Money/Withdrawal.razor]
+[C:/Users/asemn/Desktop/Ario/newArio/Front/Pages/Money/Withdrawal.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTW9uZXlcV2l0aGRyYXdhbC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/asemn/Desktop/Ario/newArio/Front/_Imports.razor]
+[C:/Users/asemn/Desktop/Ario/newArio/Front/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/asemn/Desktop/Ario/newArio/Front/Layout/MainLayout.razor]
+[C:/Users/asemn/Desktop/Ario/newArio/Front/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-pzwjewwokz
 
-[c:/Users/asemn/Desktop/Ario/newArio/Front/Layout/NavMenu.razor]
+[C:/Users/asemn/Desktop/Ario/newArio/Front/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-lucr43k91g

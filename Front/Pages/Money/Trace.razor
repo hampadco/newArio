@@ -1,5 +1,6 @@
 @page "/trace"
 @layout MainLayout
+@inject UserService s
 
 <header class="container-fluid header">
     <div class="row h-100">
@@ -17,7 +18,7 @@
         <div class="col text-center align-self-center">
             <h5 class="mb-0">گزارشات مالی</h5>
         </div>
-        
+
         <div class="col-auto align-self-center">
             <a href="/profile" class="link text-color-theme" style="color: #FF1C52;">
                 <i class="bi bi-person-circle size-22"></i>
@@ -30,10 +31,10 @@
     <!-- Ordernumber  -->
     <div class="row mb-3">
         <div class="col">
-            <p class="text-opac">گزارشات مالی</p>
+            <p class="text-opac">موجودی : @history.Balance</p>
         </div>
         <div class="col-auto text-end">
-            <p class="text-opac">تعداد تراکنشات : @history.Count</p>
+            <p class="text-opac">تعداد تراکنشات : @history.TraceHistories.Count</p>
         </div>
     </div>
 
@@ -42,7 +43,8 @@
         <div class="col-12">
             <div class="card card-light shadow-sm mb-4">
                 <ul class="list-group">
-                    @foreach(TraceHistory trace in history){
+                    @foreach (TraceHistory trace in history.TraceHistories)
+                    {
                         <li class="list-group-item">
                             <div class="row">
                                 <div class="col">
@@ -50,10 +52,12 @@
                                     <p class="text-opac">@trace.Date</p>
                                 </div>
                                 <div class="col-auto mt-3">@trace.Amount
-                                    @if(trace.type == TransactionType.Withdrawal){
+                                    @if (trace.type == TransactionType.Withdrawal)
+                                    {
                                         <i class="bi bi-dash fs-5" style="color: red;"></i>
                                     }
-                                    else{
+                                    else
+                                    {
                                         <i class="bi bi-plus fs-5" style="color: green;"></i>
                                     }
                                 </div>
@@ -82,21 +86,13 @@
 </div>
 
 @code {
-    private List<TraceHistory> history = [];
+    private Traces history = new Traces() { Balance = 0, TraceHistories = [] };
     protected override async Task OnInitializedAsync()
     {
         await FillHistory();
     }
     private async Task FillHistory()
     {
-        await Task.Delay(500);
-        history.Add(new TraceHistory{Id = 1 , Date = "یکشنبه 4 آبان 1400" , Amount = 100000 , Title="شارژ موجودی / کارت به کارت" ,type=TransactionType.Deposit});
-        history.Add(new TraceHistory{Id = 2 , Date = "دوشنبه 5 آبان 1400" , Amount = 20000 , Title="شارژ موجودی / کارت به کارت",type=TransactionType.Deposit});
-        history.Add(new TraceHistory{Id = 3 , Date = "چهارشنبه 7 آبان 1400" , Amount = 10000  , Title="شارژ موجودی / کارت به کارت",type=TransactionType.Deposit});
-        history.Add(new TraceHistory{Id = 4 , Date = "پنجشنبه 8 آبان 1400" , Amount = 10000  , Title="شارژ موجودی / کارت به کارت",type=TransactionType.Deposit});
-        history.Add(new TraceHistory{Id = 5 , Date = "یکشنبه 12 آبان 1400" , Amount = 500000  , Title="شارژ موجودی / کارت به کارت",type=TransactionType.Deposit});
-        history.Add(new TraceHistory{Id = 6 , Date = "یکشنبه 23 آبان 1400" , Amount = 1000  , Title="شارژ موجودی / کارت به کارت",type=TransactionType.Deposit});
-        history.Add(new TraceHistory{Id = 7 , Date = "یکشنبه 23 آبان 1400" , Amount = 1000  , Title="شرکت در مسابقه اریو / حق ورودی",type=TransactionType.Withdrawal});
-        history.Add(new TraceHistory{Id = 8 , Date = "یکشنبه 23 آبان 1400" , Amount = 5000 , Title="شرکت در مسابقه اریو / جایزه نفر اول",type=TransactionType.Deposit});
+        history = await s.ViewTransactions(1);
     }
 }

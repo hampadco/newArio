@@ -58,6 +58,10 @@ public class TransactionController : ControllerBase
                 });
             }
         }
-        return Ok(histories);
+        return Ok(new Traces
+        {
+            Balance = user.Balance,
+            TraceHistories = histories
+        });
     }
 }

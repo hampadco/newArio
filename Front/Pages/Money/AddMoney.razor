@@ -1,6 +1,7 @@
 @page "/AddMoney"
 @layout MainLayout
 @inject NavigationManager Navigation
+@inject UserService s
 @using System.Text.Json
 
 <!-- Header -->
@@ -164,31 +165,7 @@
     }
     private async Task FillCard() //بعدا از بک اند میگیریم اینو #تکمیلی
     {
-        await Task.Delay(1000);
-        cards.Add(new IncomingCard
-        {
-            Id = 1,
-            CardBank = "پاسارگاد",
-            CardName = "ابوالفضل سمنانی",
-            CardNumber =
-        "5022-2913-2412-0326"
-        });
-        cards.Add(new IncomingCard { Id = 2, CardBank = "ملت", CardName = "رحیم قاسمی", CardNumber = "5022-2913-2412-0326" });
-        cards.Add(new IncomingCard
-        {
-            Id = 3,
-            CardBank = "بانک شهر",
-            CardName = "علی علوی",
-            CardNumber = "5022-2913-2412-0326"
-        });
-        cards.Add(new IncomingCard
-        {
-            Id = 4,
-            CardBank = "بانک کشاورزی",
-            CardName = "ابوالفضل سمنانی",
-            CardNumber =
-        "5022-2913-2412-0326"
-        });
+        cards = await s.ShowCards();
     }
 
     private void NavigateToCart(IncomingCard card)

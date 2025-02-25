@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 [ApiController]
 [Route("[Controller]/[Action]")]
@@ -57,7 +58,7 @@ public class UserController : ControllerBase
     [HttpGet]
     public IActionResult GetFinaluser()
     {
-        var user = db.Users.OrderByDescending(x => x.Id).Take(1).FirstOrDefault();
+        var user = db.Users.OrderByDescending(x => x.Id).Include(x=>x.Transactions).Take(1).FirstOrDefault();
 
         if (user == null)
         {
