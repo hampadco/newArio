@@ -2,181 +2,176 @@
 @layout MainLayout
 @inject NavigationManager Navigation
 <style>
-    h3{
+    h3 {
         text-align: center;
     }
-    .nimg{
-        width: 150px;border-radius:10px;padding: 7px;border: 1px solid white;
+
+    .nimg {
+        width: 150px;
+        border-radius: 10px;
+        padding: 7px;
+        border: 1px solid white;
     }
 </style>
- <!-- search -->
-     
+<!-- search -->
 
-       
-     
-                
-                    <div class="card shadow-sm card-theme">
-                        <div class="card-body py-1">
-                            <div class="row">
-                                <div class="col-6">
-                                    <img src="assets/img/game.png" alt="" class="nimg">
-                                </div>
-                                <div class="col text-start align-self-center ps-0">
-                                  
-                                    <h3>اتاق بازی</h3>
-                                 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="card shadow-sm card-theme mt-3" @onclick="payment">
-                        <div class="card-body py-1">
-                            <div class="row">
-                                <div class="col-6">
-                                    <img src="assets/img/payment.png" alt="" class="nimg">
-                                </div>
-                                <div class="col text-start align-self-center ps-0">
-                                  
-                                    <h3> واریز و شارژ</h3>
-                                 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                     <div class="card shadow-sm card-theme mt-3">
-                        <div class="card-body py-1">
-                            <div class="row">
-                                <div class="col-6">
-                                    <img src="assets/img/debit.png" alt="" class="nimg">
-                                </div>
-                                <div class="col text-start align-self-center ps-0">
-                                  
-                                    <h3>برداشت وجه  </h3>
-                                 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                     <div class="card shadow-sm card-theme mt-3">
-                        <div class="card-body py-1">
-                            <div class="row">
-                                <div class="col-6">
-                                    <img src="assets/img/lattary.png" alt="" class="nimg">
-                                </div>
-                                <div class="col text-start align-self-center ps-0">
-                                  
-                                    <h3> گردونه شانش </h3>
-                                 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                
-                 <div class="card shadow-sm card-theme mt-3">
-                        <div class="card-body py-1">
-                            <div class="row">
-                                <div class="col-6">
-                                    <img src="assets/img/list.png" alt="" class="nimg">
-                                </div>
-                                <div class="col text-start align-self-center ps-0">
-                                  
-                                    <h3>لیست بردهای اخیر</h3>
-                                 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                     <div class="card shadow-sm card-theme mt-3">
-                        <div class="card-body py-1">
-                            <div class="row">
-                                <div class="col-6">
-                                    <img src="assets/img/finance.png" alt="" class="nimg">
-                                </div>
-                                <div class="col text-start align-self-center ps-0">
-                                  
-                                    <h3> گزارشات مالی </h3>
-                                 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+<div class="card shadow-sm card-theme">
+    <div class="card-body py-1">
+        <div class="row">
+            <div class="col-6">
+                <img src="assets/img/game.png" alt="" class="nimg">
+            </div>
+            <div class="col text-start align-self-center ps-0">
 
-                     <div class="card shadow-sm card-theme mt-3" @onclick="profile">
-                        <div class="card-body py-1">
-                            <div class="row">
-                                <div class="col-6">
-                                    <img src="assets/img/profile.png" alt="" class="nimg">
-                                </div>
-                                <div class="col text-start align-self-center ps-0">
-                                  
-                                    <h3> پروفایل من </h3>
-                                 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <h3>اتاق بازی</h3>
 
-                     <div class="card shadow-sm card-theme mt-3">
-                        <div class="card-body py-1">
-                            <div class="row">
-                                <div class="col-6">
-                                    <img src="assets/img/contactus.png" alt="" class="nimg">
-                                </div>
-                                <div class="col text-start align-self-center ps-0">
-                                  
-                                    <h3> تماس با ما  </h3>
-                                 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-                     <div class="card shadow-sm card-theme mt-3">
-                        <div class="card-body py-1">
-                            <div class="row">
-                                <div class="col-6">
-                                    <img src="assets/img/rule.png" alt="" class="nimg">
-                                </div>
-                                <div class="col text-start align-self-center ps-0">
-                                  
-                                    <h3> قوانین و مقررات</h3>
-                                 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+<div class="card shadow-sm card-theme mt-3" @onclick='() => MoveTo("/AddMoney")'>
+    <div class="card-body py-1">
+        <div class="row">
+            <div class="col-6">
+                <img src="assets/img/payment.png" alt="" class="nimg">
+            </div>
+            <div class="col text-start align-self-center ps-0">
 
-                     <div class="card shadow-sm card-theme mt-3">
-                        <div class="card-body py-1">
-                            <div class="row">
-                                <div class="col-6">
-                                    <img src="assets/img/logout.png" alt="" class="nimg">
-                                </div>
-                                <div class="col text-start align-self-center ps-0">
-                                  
-                                    <h3> خروج</h3>
-                                 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <h3> واریز و شارژ</h3>
 
-           @code{
+            </div>
+        </div>
+    </div>
+</div>
 
-            private void profile()
-            {
-                Navigation.NavigateTo("/profile");
+<div class="card shadow-sm card-theme mt-3" @onclick='() => MoveTo("/Withdrawal")'>
+    <div class="card-body py-1">
+        <div class="row">
+            <div class="col-6">
+                <img src="assets/img/debit.png" alt="" class="nimg">
+            </div>
+            <div class="col text-start align-self-center ps-0">
 
-            }
+                <h3>برداشت وجه </h3>
 
-            private void payment()
-            {
-                Navigation.NavigateTo("/addmoney");
+            </div>
+        </div>
+    </div>
+</div>
 
-            }
+<div class="card shadow-sm card-theme mt-3">
+    <div class="card-body py-1">
+        <div class="row">
+            <div class="col-6">
+                <img src="assets/img/lattary.png" alt="" class="nimg">
+            </div>
+            <div class="col text-start align-self-center ps-0">
 
-           }
+                <h3> گردونه شانش </h3>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card shadow-sm card-theme mt-3">
+    <div class="card-body py-1">
+        <div class="row">
+            <div class="col-6">
+                <img src="assets/img/list.png" alt="" class="nimg">
+            </div>
+            <div class="col text-start align-self-center ps-0">
+
+                <h3>لیست بردهای اخیر</h3>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card shadow-sm card-theme mt-3" @onclick='() => MoveTo("/Trace")'>
+    <div class="card-body py-1">
+        <div class="row">
+            <div class="col-6">
+                <img src="assets/img/finance.png" alt="" class="nimg">
+            </div>
+            <div class="col text-start align-self-center ps-0">
+
+                <h3> گزارشات مالی </h3>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card shadow-sm card-theme mt-3" @onclick='() => MoveTo("/profile")'>
+    <div class="card-body py-1">
+        <div class="row">
+            <div class="col-6">
+                <img src="assets/img/profile.png" alt="" class="nimg">
+            </div>
+            <div class="col text-start align-self-center ps-0">
+
+                <h3> پروفایل من </h3>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card shadow-sm card-theme mt-3" @onclick='() => MoveTo("https://t.me/Farshad5059")'>
+    <div class="card-body py-1">
+        <div class="row">
+            <div class="col-6">
+                <img src="assets/img/contactus.png" alt="" class="nimg">
+            </div>
+            <div class="col text-start align-self-center ps-0">
+
+                <h3> تماس با ما </h3>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card shadow-sm card-theme mt-3" @onclick='() => MoveTo("/Rules")'>
+    <div class="card-body py-1">
+        <div class="row">
+            <div class="col-6">
+                <img src="assets/img/rule.png" alt="" class="nimg">
+            </div>
+            <div class="col text-start align-self-center ps-0">
+
+                <h3> قوانین و مقررات</h3>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card shadow-sm card-theme mt-3">
+    <div class="card-body py-1">
+        <div class="row">
+            <div class="col-6">
+                <img src="assets/img/logout.png" alt="" class="nimg">
+            </div>
+            <div class="col text-start align-self-center ps-0">
+
+                <h3> خروج</h3>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private void MoveTo(string route)
+    {
+        Navigation.NavigateTo(route);
+    }
+}

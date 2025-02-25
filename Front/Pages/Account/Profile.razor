@@ -1,95 +1,118 @@
- @page "/profile"
- @layout MainLayout
- 
- 
-   <!-- main page content -->
-        <div class="main-container container">
+@page "/profile"
+@layout MainLayout
 
-   
-            <!-- add edit address form -->
-            <div class="row mb-3">
-                <div class="col">
-                    <h5 class="mb-0 text-center"> اطلاعات  کاربری</h5>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="card card-light shadow-sm mb-4">
-                        <div class="card-body">
+<header class="container-fluid header">
+    <div class="row h-100">
+        <div class="col-auto align-self-center">
+            <a class="btn btn-link back-btn text-color-theme" onclick="goBack()" style="color: #FF1C52;">
+                <i class="bi bi-arrow-right size-20"></i>
+            </a>
+            <script>
+                function goBack() {
+                    window.history.back();
+                }
+            </script>
+
+        </div>
+        <div class="col text-center align-self-center">
+            <h5 class="mb-0"></h5>
+        </div>
+
+        <div class="col-auto align-self-center">
+            <a href="/profile" class="link text-color-theme" style="color: #FF1C52;">
+                <i class="bi bi-person-circle size-22"></i>
+            </a>
+        </div>
+    </div>
+</header>
+
+<!-- main page content -->
+<div class="main-container container">
 
 
-                            @if(message =="show")
-                            {
-                                <p class="text-center alert alert-success"> عملیات بروزرسانی برای موفقیت انجام شد </p>
-                            }
+    <!-- add edit address form -->
+    <div class="row mb-3">
+        <div class="col">
+            <h5 class="mb-0 text-center"> اطلاعات کاربری</h5>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="card card-light shadow-sm mb-4">
+                <div class="card-body">
+
+
+                    @if (message == "show")
+                    {
+                        <p class="text-center alert alert-success"> عملیات بروزرسانی برای موفقیت انجام شد </p>
+                    }
 
 
 
-                            <div class="row">
-                                <div class="col-12 col-md-6 col-lg-4 mb-3">
-                                    <div class="form-group form-floating">
-                                        <input style="display: none;" @bind="user.Id" type="text" class="form-control"  >
-                                        <input @bind="user.Name" type="text" class="form-control"  >
-                                        <label class="form-control-label" >اسم شما</label>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-6 col-lg-4 mb-3">
-                                    <div class="form-group form-floating">
-                                        <input readonly @bind="user.UserName" type="text" class="form-control"  >
-                                        <label class="form-control-label" >نام کاربری  </label>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-6 col-lg-4 mb-3">
-                                    <div class="form-group form-floating">
-                                        <input readonly @bind="user.PhoneNumber" type="text" class="form-control"   >
-                                        <label class="form-control-label" >شماره تلفن</label>
-                                    </div>
-                                </div>
-                               
-                               
-                                <div class="col-12 col-md-6 col-lg-4 mb-3">
-                                    <div class="form-group form-floating">
-                                        <input type="text" @bind="user.Password" class="form-control"   >
-                                        <label class="form-control-label" >رمز عبور شما</label>
-                                    </div>
-                                </div>
-                                
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4 mb-3">
+                            <div class="form-group form-floating">
+                                <input style="display: none;" @bind="user.Id" type="text" class="form-control">
+                                <input @bind="user.Name" type="text" class="form-control">
+                                <label class="form-control-label">اسم شما</label>
                             </div>
                         </div>
+                        <div class="col-12 col-md-6 col-lg-4 mb-3">
+                            <div class="form-group form-floating">
+                                <input readonly @bind="user.UserName" type="text" class="form-control">
+                                <label class="form-control-label">نام کاربری </label>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 mb-3">
+                            <div class="form-group form-floating">
+                                <input readonly @bind="user.PhoneNumber" type="text" class="form-control">
+                                <label class="form-control-label">شماره تلفن</label>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-md-6 col-lg-4 mb-3">
+                            <div class="form-group form-floating">
+                                <input type="text" @bind="user.Password" class="form-control">
+                                <label class="form-control-label">رمز عبور شما</label>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
-
-            <!-- change password -->
-           
-
-            <div class="row h-100 mb-4">
-                <div class="col-12 d-grid"><button  @onclick="UpdateUser" class="btn btn-lg btn-default shadow-sm">به روز رسانی</button></div>
-            </div>
-
         </div>
-        <!-- main page content ends -->
+    </div>
 
-        @code{
-            string message="null";
-            User user=new User();
-            [Inject]
-            private HttpClient _http {get;set;}
-            protected override async Task  OnInitializedAsync()
-            {
-                user= await _http.GetFromJsonAsync<User>("http://localhost:5298/User/GetFinaluser");
-            }
-
-            private async Task UpdateUser()
-            {
-                await _http.PutAsJsonAsync("http://localhost:5298/User/UpdateUser",user);
-                message ="show";
-
-            }
+    <!-- change password -->
 
 
+    <div class="row h-100 mb-4">
+        <div class="col-12 d-grid"><button @onclick="UpdateUser" class="btn btn-lg btn-default shadow-sm">به روز
+                رسانی</button></div>
+    </div>
 
-            
-        }
+</div>
+<!-- main page content ends -->
 
-      
+@code {
+    string message = "null";
+    User user = new User();
+    [Inject]
+    private HttpClient _http { get; set; }
+    protected override async Task OnInitializedAsync()
+    {
+        user = await _http.GetFromJsonAsync<User>("http://localhost:5298/User/GetFinaluser");
+    }
+
+    private async Task UpdateUser()
+    {
+        await _http.PutAsJsonAsync("http://localhost:5298/User/UpdateUser", user);
+        message = "show";
+
+    }
+
+
+
+
+}

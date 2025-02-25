@@ -1,6 +1,31 @@
 @page "/trace"
 @layout MainLayout
 
+<header class="container-fluid header">
+    <div class="row h-100">
+        <div class="col-auto align-self-center">
+            <a class="btn btn-link back-btn text-color-theme" onclick="goBack()" style="color: #FF1C52;">
+                <i class="bi bi-arrow-right size-20"></i>
+            </a>
+            <script>
+                function goBack() {
+                    window.history.back();
+                }
+            </script>
+
+        </div>
+        <div class="col text-center align-self-center">
+            <h5 class="mb-0">گزارشات مالی</h5>
+        </div>
+        
+        <div class="col-auto align-self-center">
+            <a href="/profile" class="link text-color-theme" style="color: #FF1C52;">
+                <i class="bi bi-person-circle size-22"></i>
+            </a>
+        </div>
+    </div>
+</header>
+
 <div class="main-container container">
     <!-- Ordernumber  -->
     <div class="row mb-3">
