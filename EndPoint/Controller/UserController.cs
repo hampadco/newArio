@@ -1,5 +1,3 @@
-using System.Runtime.CompilerServices;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 [ApiController]

@@ -46,11 +46,11 @@
                         <li class="list-group-item">
                             <div class="row">
                                 <div class="col">
-                                    <p class="mb-1 fw-bold">@trace.title</p>
+                                    <p class="mb-1 fw-bold">@trace.Title</p>
                                     <p class="text-opac">@trace.Date</p>
                                 </div>
-                                <div class="col-auto mt-3">@trace.Price
-                                    @if(trace.IsWaste){
+                                <div class="col-auto mt-3">@trace.Amount
+                                    @if(trace.type == TransactionType.Withdrawal){
                                         <i class="bi bi-dash fs-5" style="color: red;"></i>
                                     }
                                     else{
@@ -90,13 +90,13 @@
     private async Task FillHistory()
     {
         await Task.Delay(500);
-        history.Add(new TraceHistory{Id = 1 , Date = "یکشنبه 4 آبان 1400" , Price = "100000 تومان" , title="شارژ موجودی / کارت به کارت" ,IsWaste=false});
-        history.Add(new TraceHistory{Id = 2 , Date = "دوشنبه 5 آبان 1400" , Price = "200000 تومان" , title="شارژ موجودی / کارت به کارت",IsWaste=false});
-        history.Add(new TraceHistory{Id = 3 , Date = "چهارشنبه 7 آبان 1400" , Price = "10000 تومان" , title="شارژ موجودی / کارت به کارت",IsWaste=false});
-        history.Add(new TraceHistory{Id = 4 , Date = "پنجشنبه 8 آبان 1400" , Price = "10000 تومان" , title="شارژ موجودی / کارت به کارت",IsWaste=false});
-        history.Add(new TraceHistory{Id = 5 , Date = "یکشنبه 12 آبان 1400" , Price = "500000 تومان" , title="شارژ موجودی / کارت به کارت",IsWaste=false});
-        history.Add(new TraceHistory{Id = 6 , Date = "یکشنبه 23 آبان 1400" , Price = "1000 تومان" , title="شارژ موجودی / کارت به کارت",IsWaste=false});
-        history.Add(new TraceHistory{Id = 7 , Date = "یکشنبه 23 آبان 1400" , Price = "1000 تومان" , title="شرکت در مسابقه اریو / حق ورودی",IsWaste=true});
-        history.Add(new TraceHistory{Id = 8 , Date = "یکشنبه 23 آبان 1400" , Price = "5000 تومان" , title="شرکت در مسابقه اریو / جایزه نفر اول",IsWaste=false});
+        history.Add(new TraceHistory{Id = 1 , Date = "یکشنبه 4 آبان 1400" , Amount = 100000 , Title="شارژ موجودی / کارت به کارت" ,type=TransactionType.Deposit});
+        history.Add(new TraceHistory{Id = 2 , Date = "دوشنبه 5 آبان 1400" , Amount = 20000 , Title="شارژ موجودی / کارت به کارت",type=TransactionType.Deposit});
+        history.Add(new TraceHistory{Id = 3 , Date = "چهارشنبه 7 آبان 1400" , Amount = 10000  , Title="شارژ موجودی / کارت به کارت",type=TransactionType.Deposit});
+        history.Add(new TraceHistory{Id = 4 , Date = "پنجشنبه 8 آبان 1400" , Amount = 10000  , Title="شارژ موجودی / کارت به کارت",type=TransactionType.Deposit});
+        history.Add(new TraceHistory{Id = 5 , Date = "یکشنبه 12 آبان 1400" , Amount = 500000  , Title="شارژ موجودی / کارت به کارت",type=TransactionType.Deposit});
+        history.Add(new TraceHistory{Id = 6 , Date = "یکشنبه 23 آبان 1400" , Amount = 1000  , Title="شارژ موجودی / کارت به کارت",type=TransactionType.Deposit});
+        history.Add(new TraceHistory{Id = 7 , Date = "یکشنبه 23 آبان 1400" , Amount = 1000  , Title="شرکت در مسابقه اریو / حق ورودی",type=TransactionType.Withdrawal});
+        history.Add(new TraceHistory{Id = 8 , Date = "یکشنبه 23 آبان 1400" , Amount = 5000 , Title="شرکت در مسابقه اریو / جایزه نفر اول",type=TransactionType.Deposit});
     }
 }
