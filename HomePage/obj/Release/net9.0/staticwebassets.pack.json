@@ -1,0 +1,325 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\bin\\Release\\net9.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\obj\\Release\\net9.0\\scopedcss\\bundle\\HomePage.styles.css",
+      "PackagePath": "staticwebassets\\HomePage.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\css\\animate.min.css",
+      "PackagePath": "staticwebassets\\css\\animate.min.css"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\css\\flaticon.css",
+      "PackagePath": "staticwebassets\\css\\flaticon.css"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\css\\lightbox.min.css",
+      "PackagePath": "staticwebassets\\css\\lightbox.min.css"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\css\\mb.YTPlayer.min.css",
+      "PackagePath": "staticwebassets\\css\\mb.YTPlayer.min.css"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\css\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\css\\owl.carousel.min.css"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\css\\validator.min.css",
+      "PackagePath": "staticwebassets\\css\\validator.min.css"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\fonts\\Flaticon.eot",
+      "PackagePath": "staticwebassets\\fonts\\Flaticon.eot"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\fonts\\Flaticon.svg",
+      "PackagePath": "staticwebassets\\fonts\\Flaticon.svg"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\fonts\\Flaticon.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Flaticon.ttf"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\fonts\\Flaticon.woff",
+      "PackagePath": "staticwebassets\\fonts\\Flaticon.woff"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\fonts\\Vazir-Regular.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Vazir-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\images\\about.png",
+      "PackagePath": "staticwebassets\\images\\about.png"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\images\\bg\\1.jpg",
+      "PackagePath": "staticwebassets\\images\\bg\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\images\\bg\\2.jpg",
+      "PackagePath": "staticwebassets\\images\\bg\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\images\\bg\\3.jpg",
+      "PackagePath": "staticwebassets\\images\\bg\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\images\\bg\\4.jpg",
+      "PackagePath": "staticwebassets\\images\\bg\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\images\\bg\\5.jpg",
+      "PackagePath": "staticwebassets\\images\\bg\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\images\\bg\\6.jpg",
+      "PackagePath": "staticwebassets\\images\\bg\\6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\images\\bg\\7.jpg",
+      "PackagePath": "staticwebassets\\images\\bg\\7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\images\\bg\\main-demo.jpg",
+      "PackagePath": "staticwebassets\\images\\bg\\main-demo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\images\\blog\\blog-1.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\blog-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\images\\blog\\blog-2.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\blog-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\images\\blog\\blog-3.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\blog-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\images\\clients\\1.png",
+      "PackagePath": "staticwebassets\\images\\clients\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\images\\clients\\2.png",
+      "PackagePath": "staticwebassets\\images\\clients\\2.png"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\images\\clients\\3.png",
+      "PackagePath": "staticwebassets\\images\\clients\\3.png"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\images\\clients\\4.png",
+      "PackagePath": "staticwebassets\\images\\clients\\4.png"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\images\\clients\\5.png",
+      "PackagePath": "staticwebassets\\images\\clients\\5.png"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\images\\clients\\6.png",
+      "PackagePath": "staticwebassets\\images\\clients\\6.png"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\images\\clients\\7.png",
+      "PackagePath": "staticwebassets\\images\\clients\\7.png"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\images\\close.png",
+      "PackagePath": "staticwebassets\\images\\close.png"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\images\\loading.gif",
+      "PackagePath": "staticwebassets\\images\\loading.gif"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\images\\logo-theme.png",
+      "PackagePath": "staticwebassets\\images\\logo-theme.png"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\images\\next.png",
+      "PackagePath": "staticwebassets\\images\\next.png"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\images\\portfolio\\1.jpg",
+      "PackagePath": "staticwebassets\\images\\portfolio\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\images\\portfolio\\10.gif",
+      "PackagePath": "staticwebassets\\images\\portfolio\\10.gif"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\images\\portfolio\\2.jpg",
+      "PackagePath": "staticwebassets\\images\\portfolio\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\images\\portfolio\\3.jpg",
+      "PackagePath": "staticwebassets\\images\\portfolio\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\images\\portfolio\\4.jpg",
+      "PackagePath": "staticwebassets\\images\\portfolio\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\images\\portfolio\\5.jpg",
+      "PackagePath": "staticwebassets\\images\\portfolio\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\images\\portfolio\\6.jpg",
+      "PackagePath": "staticwebassets\\images\\portfolio\\6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\images\\portfolio\\7.jpg",
+      "PackagePath": "staticwebassets\\images\\portfolio\\7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\images\\portfolio\\8.gif",
+      "PackagePath": "staticwebassets\\images\\portfolio\\8.gif"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\images\\portfolio\\9.jpg",
+      "PackagePath": "staticwebassets\\images\\portfolio\\9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\images\\prev.png",
+      "PackagePath": "staticwebassets\\images\\prev.png"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\images\\team\\1.jpg",
+      "PackagePath": "staticwebassets\\images\\team\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\images\\team\\2.jpg",
+      "PackagePath": "staticwebassets\\images\\team\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\images\\team\\3.jpg",
+      "PackagePath": "staticwebassets\\images\\team\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\images\\team\\4.jpg",
+      "PackagePath": "staticwebassets\\images\\team\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\images\\testimonial\\1.jpg",
+      "PackagePath": "staticwebassets\\images\\testimonial\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\images\\testimonial\\2.jpg",
+      "PackagePath": "staticwebassets\\images\\testimonial\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\js\\isotope.pkgd.min.js",
+      "PackagePath": "staticwebassets\\js\\isotope.pkgd.min.js"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\js\\jquery.appear.js",
+      "PackagePath": "staticwebassets\\js\\jquery.appear.js"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\js\\jquery.counterup.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.counterup.min.js"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\js\\jquery.easing.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.easing.min.js"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\js\\jquery.mb.YTPlayer.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.mb.YTPlayer.min.js"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\js\\jquery.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\js\\jquery.stellar.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.stellar.min.js"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\js\\lightbox.min.js",
+      "PackagePath": "staticwebassets\\js\\lightbox.min.js"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\js\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\js\\owl.carousel.min.js"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\js\\theme.js",
+      "PackagePath": "staticwebassets\\js\\theme.js"
+    },
+    {
+      "Id": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\js\\validator.min.js",
+      "PackagePath": "staticwebassets\\js\\validator.min.js"
+    },
+    {
+      "Id": "obj\\Release\\net9.0\\staticwebassets\\msbuild.HomePage.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Release\\net9.0\\staticwebassets\\msbuild.HomePage.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net9.0\\staticwebassets\\msbuild.build.HomePage.props",
+      "PackagePath": "build\\HomePage.props"
+    },
+    {
+      "Id": "obj\\Release\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.HomePage.props",
+      "PackagePath": "buildMultiTargeting\\HomePage.props"
+    },
+    {
+      "Id": "obj\\Release\\net9.0\\staticwebassets\\msbuild.buildTransitive.HomePage.props",
+      "PackagePath": "buildTransitive\\HomePage.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

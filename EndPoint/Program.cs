@@ -24,7 +24,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy(name: MyAllowSpecificOrigins,
         policy =>
         {
-            policy.WithOrigins("http://localhost:5014") // 🚀 آدرس دقیق فرانت‌اند را وارد کن
+            policy.AllowAnyOrigin() // 🚀 آدرس دقیق فرانت‌اند را وارد کن
                   .AllowAnyMethod()
                   .AllowAnyHeader();
         });

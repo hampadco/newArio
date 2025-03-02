@@ -3,6 +3,7 @@ using System.Net.Http.Json;
 public class UserService
 {
     private readonly HttpClient _http;
+    private readonly string url = "http://localhost:5298";
     public UserService(HttpClient http)
     {
         _http = http;
@@ -12,7 +13,7 @@ public class UserService
     {
         try
         {
-            HttpResponseMessage response = await _http.PostAsJsonAsync("http://localhos t:5298/User/AddUsers", user);
+            HttpResponseMessage response = await _http.PostAsJsonAsync($"{url}/User/AddUsers", user);
 
             if (response.IsSuccessStatusCode)
             {
@@ -39,7 +40,7 @@ public class UserService
         {
 
             // ارسال درخواست POST به سرور
-            HttpResponseMessage response = await _http.PostAsJsonAsync("http://localhost:5298/User/CheckLogin", loginData);
+            HttpResponseMessage response = await _http.PostAsJsonAsync($"{url}/User/CheckLogin", loginData);
 
             if (response.IsSuccessStatusCode)
             {
@@ -66,7 +67,7 @@ public class UserService
     {
         try
         {
-            HttpResponseMessage response = await _http.GetAsync($"http://localhost:5298/Transaction/ViewTransactions?UserId={UserId}");
+            HttpResponseMessage response = await _http.GetAsync($"{url}/Transaction/ViewTransactions?UserId={UserId}");
 
             if (response.IsSuccessStatusCode)
             {
@@ -91,7 +92,7 @@ public class UserService
     {
         try
         {
-            HttpResponseMessage response = await _http.GetAsync($"http://localhost:5298/Card/ShowCards");
+            HttpResponseMessage response = await _http.GetAsync($"{url}/Card/ShowCards");
 
             if (response.IsSuccessStatusCode)
             {
