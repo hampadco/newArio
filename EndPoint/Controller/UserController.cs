@@ -1,5 +1,10 @@
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 
 [ApiController]
 [Route("[Controller]/[Action]")]
@@ -31,7 +36,6 @@ public class UserController : ControllerBase
 
 
     [HttpGet]
-
     public List<User> GetUsers()
     {
         return db.Users.OrderByDescending(x => x.Id).ToList();
@@ -46,7 +50,7 @@ public class UserController : ControllerBase
         if (user != null)
         {
             // اگر کاربر پیدا شد، ورود موفقیت‌آمیز است
-            return Ok("ورود موفقیت‌آمیز بود");
+            return Ok(new tokenJwt { Token = GenerateToken(user) });
         }
         else
         {
@@ -55,10 +59,12 @@ public class UserController : ControllerBase
         }
     }
 
+    [Authorize]
     [HttpGet]
-    public IActionResult GetFinaluser()
+    public IActionResult Getuser()
     {
-        var user = db.Users.OrderByDescending(x => x.Id).Include(x=>x.Transactions).Take(1).FirstOrDefault();
+        int UserId = Convert.ToInt32(User.FindFirstValue("id"));
+        var user = db.Users.Find(UserId);
 
         if (user == null)
         {
@@ -67,7 +73,7 @@ public class UserController : ControllerBase
         return Ok(user);
     }
 
-
+    [Authorize]
     [HttpPut]
     public IActionResult UpdateUser(User newuser)
     {
@@ -80,5 +86,27 @@ public class UserController : ControllerBase
 
     }
 
+    private string GenerateToken(User user)
+    {
+        var claims = new[]
+       {
+            new Claim("id", user.Id.ToString()), // Id
+            new Claim("name", user.Name), // name
+            new Claim("Username",user.UserName) //Username
+        };
+
+        var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("superSecretKey@345hampadco5656hastalavista"));
+        var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+
+        var token = new JwtSecurityToken(
+            issuer: "Ario",
+            audience: "Client",
+            claims: claims,
+            expires: DateTime.Now.AddDays(2),
+            signingCredentials: creds);
+
+        return new JwtSecurityTokenHandler().WriteToken(token);
+        // return Ok(new { token = new JwtSecurityTokenHandler().WriteToken(token) });
+    }
 
 }

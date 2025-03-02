@@ -317,8 +317,8 @@ C:\Users\Apple\Desktop\Ario-master\EndPoint\obj\Debug\net9.0\refint\EndPoint.dll
 C:\Users\Apple\Desktop\Ario-master\EndPoint\obj\Debug\net9.0\EndPoint.pdb
 C:\Users\Apple\Desktop\Ario-master\EndPoint\obj\Debug\net9.0\EndPoint.genruntimeconfig.cache
 C:\Users\Apple\Desktop\Ario-master\EndPoint\obj\Debug\net9.0\ref\EndPoint.dll
-C:\Users\asemn\Desktop\Ario\newArio\EndPoint\bin\Debug\net9.0\appsettings.json
 C:\Users\asemn\Desktop\Ario\newArio\EndPoint\bin\Debug\net9.0\appsettings.Development.json
+C:\Users\asemn\Desktop\Ario\newArio\EndPoint\bin\Debug\net9.0\appsettings.json
 C:\Users\asemn\Desktop\Ario\newArio\EndPoint\bin\Debug\net9.0\EndPoint.staticwebassets.endpoints.json
 C:\Users\asemn\Desktop\Ario\newArio\EndPoint\bin\Debug\net9.0\EndPoint.exe
 C:\Users\asemn\Desktop\Ario\newArio\EndPoint\bin\Debug\net9.0\EndPoint.deps.json
@@ -328,6 +328,7 @@ C:\Users\asemn\Desktop\Ario\newArio\EndPoint\bin\Debug\net9.0\EndPoint.pdb
 C:\Users\asemn\Desktop\Ario\newArio\EndPoint\bin\Debug\net9.0\Azure.Core.dll
 C:\Users\asemn\Desktop\Ario\newArio\EndPoint\bin\Debug\net9.0\Azure.Identity.dll
 C:\Users\asemn\Desktop\Ario\newArio\EndPoint\bin\Debug\net9.0\Humanizer.dll
+C:\Users\asemn\Desktop\Ario\newArio\EndPoint\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\asemn\Desktop\Ario\newArio\EndPoint\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
 C:\Users\asemn\Desktop\Ario\newArio\EndPoint\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\asemn\Desktop\Ario\newArio\EndPoint\bin\Debug\net9.0\Microsoft.Build.Locator.dll

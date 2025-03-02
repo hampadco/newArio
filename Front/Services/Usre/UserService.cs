@@ -1,12 +1,33 @@
+using System.Net.Http.Headers;
 using System.Net.Http.Json;
+using Microsoft.JSInterop;
 
 public class UserService
 {
     private readonly HttpClient _http;
+    private readonly IJSRuntime jsRuntime;
     private readonly string url = "http://localhost:5298";
-    public UserService(HttpClient http)
+    public UserService(HttpClient http, IJSRuntime _jsRuntime)
     {
         _http = http;
+        jsRuntime = _jsRuntime;
+    }
+
+    public async Task DelToken()
+    {
+        await jsRuntime.InvokeVoidAsync("localStorage.removeItem", "jwtToken");
+    }
+
+    public async Task<string> CallToken()
+    {
+        string token = await jsRuntime.InvokeAsync<string>("localStorage.getItem", "jwtToken");
+        return token;
+    }
+
+    private void SetToken(string token)
+    {
+        _http.DefaultRequestHeaders.Authorization = null;
+        _http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
     }
 
     public async Task<string> AddUser(User user)
@@ -23,12 +44,14 @@ public class UserService
             {
                 string errorContent = await response.Content.ReadAsStringAsync();
                 Console.WriteLine($"خطای سرور: {response.StatusCode} - {errorContent}");
+                await DelToken();
                 return $"خطا: {response.StatusCode} - {errorContent}";
             }
         }
         catch (Exception ex)
         {
             Console.WriteLine($"استثناء رخ داد: {ex.Message}");
+            await DelToken();
             return $"استثناء رخ داد: {ex.Message}";
         }
     }
@@ -44,6 +67,8 @@ public class UserService
 
             if (response.IsSuccessStatusCode)
             {
+                var token = await response.Content.ReadFromJsonAsync<tokenJwt>();
+                await jsRuntime.InvokeVoidAsync("localStorage.setItem", "jwtToken", token.Token);
                 // اگر پاسخ موفقیت‌آمیز بود، نتیجه true برمی‌گردد
                 return true;
             }
@@ -52,6 +77,7 @@ public class UserService
                 // اگر خطا رخ داد، خطای سرور را در کنسول نمایش می‌دهیم
                 string errorContent = await response.Content.ReadAsStringAsync();
                 Console.WriteLine($"خطای سرور: {response.StatusCode} - {errorContent}");
+                await DelToken();
                 return false;
             }
         }
@@ -59,15 +85,17 @@ public class UserService
         {
             // در صورت بروز استثناء، خطا را در کنسول چاپ کرده و false برمی‌گردانیم
             Console.WriteLine($"استثناء رخ داد: {ex.Message}");
+            await DelToken();
             return false;
         }
     }
 
-    public async Task<Traces> ViewTransactions(int UserId)
+    public async Task<Traces> ViewTransactions(string token)
     {
         try
         {
-            HttpResponseMessage response = await _http.GetAsync($"{url}/Transaction/ViewTransactions?UserId={UserId}");
+            SetToken(token);
+            HttpResponseMessage response = await _http.GetAsync($"{url}/Transaction/ViewTransactions");
 
             if (response.IsSuccessStatusCode)
             {
@@ -78,20 +106,23 @@ public class UserService
             {
                 string errorContent = await response.Content.ReadAsStringAsync();
                 Console.WriteLine($"خطای سرور: {response.StatusCode} - {errorContent}");
+                await DelToken();
                 return new Traces() { Balance = 0, TraceHistories = [] };
             }
         }
         catch (Exception ex)
         {
             Console.WriteLine($"استثناء رخ داد: {ex.Message}");
+            await DelToken();
             return new Traces() { Balance = 0, TraceHistories = [] };
         }
     }
 
-    public async Task<List<IncomingCard>> ShowCards()
+    public async Task<List<IncomingCard>> ShowCards(string token)
     {
         try
         {
+            SetToken(token);
             HttpResponseMessage response = await _http.GetAsync($"{url}/Card/ShowCards");
 
             if (response.IsSuccessStatusCode)
@@ -103,13 +134,38 @@ public class UserService
             {
                 string errorContent = await response.Content.ReadAsStringAsync();
                 Console.WriteLine($"خطای سرور: {response.StatusCode} - {errorContent}");
+                await DelToken();
                 return [];
             }
         }
         catch (Exception ex)
         {
             Console.WriteLine($"استثناء رخ داد: {ex.Message}");
+            await DelToken();
             return [];
         }
+    }
+    public async Task<bool> UpdateUser(User user, string token)
+    {
+        SetToken(token);
+        HttpResponseMessage result = await _http.PutAsJsonAsync($"{url}/User/UpdateUser", user);
+        if (result.IsSuccessStatusCode)
+        {
+            return true;
+        }
+        await DelToken();
+        return false;
+    }
+    public async Task<User> getUser(string token)
+    {
+        SetToken(token);
+        HttpResponseMessage result = await _http.GetAsync($"{url}/User/GetUser");
+        if (result.IsSuccessStatusCode)
+        {
+            User? user = await result.Content.ReadFromJsonAsync<User>();
+            return user!;
+        }
+        await DelToken();
+        return new User();
     }
 }

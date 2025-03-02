@@ -1,6 +1,7 @@
 @page "/register"
 @using BlazorBootstrap
 @inject UserService s;
+@inject NavigationManager Navigation
 
 
 
@@ -92,8 +93,8 @@
                                         </div>
 
                                         <div class="form-floating mb-3">
-                                            <input required @bind="user.PasswordCheck" type="password" class="form-control"
-                                                id="password" placeholder="رمز عبور شما">
+                                            <input required @bind="user.PasswordCheck" type="password"
+                                                class="form-control" id="password" placeholder="رمز عبور شما">
                                             <label for="password">تایید کلمه عبور</label>
                                             <ValidationMessage For="@(() => user.PasswordCheck)" />
                                         </div>
@@ -158,8 +159,15 @@
     RegisterRequest user = new RegisterRequest();
     string dis = "none";
     string message;
-   
 
+    protected override async Task OnInitializedAsync()
+    {
+        var token = await s.CallToken();
+        if (!String.IsNullOrEmpty(token))
+        {
+            Navigation.NavigateTo("/home");
+        }
+    }
 
     private async Task AddNewUser()
     {
@@ -171,7 +179,8 @@
 
             try
             {
-                User request = new User(){
+                User request = new User()
+                {
                     Name = user.Name,
                     Password = user.Password,
                     PhoneNumber = user.PhoneNumber,

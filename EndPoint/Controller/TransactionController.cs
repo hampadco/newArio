@@ -1,8 +1,11 @@
 using System.Data.Common;
 using System.Globalization;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
+[Authorize]
 [ApiController]
 [Route("[Controller]/[Action]")]
 public class TransactionController : ControllerBase
@@ -39,8 +42,9 @@ public class TransactionController : ControllerBase
     }
 
     [HttpGet]
-    public IActionResult ViewTransactions(int UserId)
+    public IActionResult ViewTransactions()
     {
+        int UserId = Convert.ToInt32(User.FindFirstValue("id"));
         User user = db.Users.Include(x => x.Transactions).FirstOrDefault(x => x.Id == UserId)!;
         List<TraceHistory> histories = new List<TraceHistory>();
         PersianCalendar pc = new PersianCalendar();

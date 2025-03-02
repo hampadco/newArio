@@ -1,6 +1,7 @@
 @page "/home"
 @layout MainLayout
 @inject NavigationManager Navigation
+@inject UserService s
 <style>
     h3 {
         text-align: center;
@@ -154,7 +155,7 @@
     </div>
 </div>
 
-<div class="card shadow-sm card-theme mt-3">
+<div class="card shadow-sm card-theme mt-3" @onclick="() => Exit()">
     <div class="card-body py-1">
         <div class="row">
             <div class="col-6">
@@ -173,5 +174,19 @@
     private void MoveTo(string route)
     {
         Navigation.NavigateTo(route);
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        var token = await s.CallToken();
+        if (String.IsNullOrEmpty(token))
+        {
+            Navigation.NavigateTo("/signin");
+        }
+    }
+    private async Task Exit()
+    {
+        await s.DelToken();
+        Navigation.NavigateTo("/signin");
     }
 }

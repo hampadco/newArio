@@ -101,33 +101,42 @@
     LoginRequest loginRequest=new LoginRequest();
 
 
-     string dis="none";
-     string message;
+    string dis="none";
+    string message;
 
-  private async Task login()
-{
-    dis = "none";  // ابتدا پیام مخفی شود
-    message = "";   // مقدار پیام را ریست کنیم
-
-    try
+    protected override async Task OnInitializedAsync()
     {
-        var result = await s.CheckLogin(loginRequest);
-        if (result)
+        var token = await s.CallToken();
+        if (!String.IsNullOrEmpty(token))
         {
-            // اگر ورود موفق بود، به صفحه Home هدایت کن
             Navigation.NavigateTo("/home");
         }
-        else
+    }
+
+    private async Task login()
+    {
+        dis = "none";  // ابتدا پیام مخفی شود
+        message = "";   // مقدار پیام را ریست کنیم
+
+        try
         {
-            // در صورت خطا می‌توانید یک پیام خطا نشان دهید
-            dis = "error";
-            message="نام کاربری یا رمز عبور شما نادرست است ";
+            var result = await s.CheckLogin(loginRequest);
+            if (result)
+            {
+                // اگر ورود موفق بود، به صفحه Home هدایت کن
+                Navigation.NavigateTo("/home");
+            }
+            else
+            {
+                // در صورت خطا می‌توانید یک پیام خطا نشان دهید
+                dis = "error";
+                message="نام کاربری یا رمز عبور شما نادرست است ";
+            }
+        }
+        catch (Exception ex)
+        {
+            message = $"مشکلی رخ داد: {ex.Message}";
+            dis = "error"; // نمایش پیام خطا
         }
     }
-    catch (Exception ex)
-    {
-        message = $"مشکلی رخ داد: {ex.Message}";
-        dis = "error"; // نمایش پیام خطا
-    }
-}
 }

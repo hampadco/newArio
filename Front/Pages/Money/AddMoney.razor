@@ -21,7 +21,7 @@
         <div class="col text-center align-self-center">
             <h5 class="mb-0">پول اضافه کنید</h5>
         </div>
-        
+
         <div class="col-auto align-self-center">
             <a href="/profile" class="link text-color-theme" style="color: #FF1C52;">
                 <i class="bi bi-person-circle size-22"></i>
@@ -88,10 +88,10 @@
                     <div class="card-body">
                         <div class="row">
                             <!-- <div class="col-auto">
-                                                        <figure class="text-center mb-0 avatar avatar-40 page-bg rounded p-1">
-                                                            <img src="assets/img/maestro.png" alt="">
-                                                        </figure>
-                                                    </div> -->
+                                                            <figure class="text-center mb-0 avatar avatar-40 page-bg rounded p-1">
+                                                                <img src="assets/img/maestro.png" alt="">
+                                                            </figure>
+                                                        </div> -->
                             <div class="col align-self-center">
                                 <p>کارت به کارت <br><small class="text-opac mt-1"><b>@card.CardNumber</b><br>@card.CardBank
                                         / @card.CardName</small>
@@ -159,13 +159,19 @@
 
 @code {
     private List<IncomingCard> cards = [];
+    string token = String.Empty;
     protected override async Task OnInitializedAsync()
     {
+        token = await s.CallToken();
+        if (String.IsNullOrEmpty(token))
+        {
+            Navigation.NavigateTo("/signin");
+        }
         await FillCard();
     }
     private async Task FillCard() //بعدا از بک اند میگیریم اینو #تکمیلی
     {
-        cards = await s.ShowCards();
+        cards = await s.ShowCards(token);
     }
 
     private void NavigateToCart(IncomingCard card)

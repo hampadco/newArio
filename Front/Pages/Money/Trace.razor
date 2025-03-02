@@ -1,6 +1,7 @@
 @page "/trace"
 @layout MainLayout
 @inject UserService s
+@inject NavigationManager Navigation
 
 <header class="container-fluid header">
     <div class="row h-100">
@@ -87,12 +88,18 @@
 
 @code {
     private Traces history = new Traces() { Balance = 0, TraceHistories = [] };
+    private string token = string.Empty;
     protected override async Task OnInitializedAsync()
     {
+        token = await s.CallToken();
+        if (token == null)
+        {
+            Navigation.NavigateTo("/signin");
+        }
         await FillHistory();
     }
     private async Task FillHistory()
     {
-        history = await s.ViewTransactions(1);
+        history = await s.ViewTransactions(token);
     }
 }
