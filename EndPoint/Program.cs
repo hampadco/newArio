@@ -1,5 +1,3 @@
-
-
 using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
@@ -10,7 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
-builder.Services.AddDbContext<Context>(x=>
+builder.Services.AddDbContext<Context>(x =>
 x.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
 
 //jwt token
@@ -97,4 +95,3 @@ app.UseAuthentication(); // اضافه کردن این خط
 app.UseAuthorization();
 app.MapControllers();
 app.Run();
-

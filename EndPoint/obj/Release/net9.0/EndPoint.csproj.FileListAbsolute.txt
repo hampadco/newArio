@@ -158,3 +158,4 @@ C:\Users\asemn\Desktop\Ario\newArio\EndPoint\obj\Release\net9.0\refint\EndPoint.
 C:\Users\asemn\Desktop\Ario\newArio\EndPoint\obj\Release\net9.0\EndPoint.pdb
 C:\Users\asemn\Desktop\Ario\newArio\EndPoint\obj\Release\net9.0\EndPoint.genruntimeconfig.cache
 C:\Users\asemn\Desktop\Ario\newArio\EndPoint\obj\Release\net9.0\ref\EndPoint.dll
+C:\Users\asemn\Desktop\Ario\newArio\EndPoint\bin\Release\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

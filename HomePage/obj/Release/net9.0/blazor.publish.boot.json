@@ -1,9 +1,9 @@
 {
   "mainAssemblyName": "HomePage",
   "resources": {
-    "hash": "sha256-nzDeWVfC1V690mznX7gmHJNgOG1GvSY3Nf3MjHsyaLk=",
+    "hash": "sha256-ApfWK1bwz+I8yQ3m5maTpe5x3RBavY02/a7oOWXkr88=",
     "fingerprinting": {
-      "HomePage.uef8e5a9ij.wasm": "HomePage.wasm",
+      "HomePage.5euuubrzoo.wasm": "HomePage.wasm",
       "Microsoft.AspNetCore.Components.hadr1j2bl3.wasm": "Microsoft.AspNetCore.Components.wasm",
       "Microsoft.AspNetCore.Components.Web.5fnpqqr84r.wasm": "Microsoft.AspNetCore.Components.Web.wasm",
       "Microsoft.AspNetCore.Components.WebAssembly.0prlth0hc4.wasm": "Microsoft.AspNetCore.Components.WebAssembly.wasm",
@@ -62,7 +62,7 @@
       "System.Runtime.InteropServices.JavaScript.2qzse51b5r.wasm": "sha256-2nWN1zwezK82JRmcnLLcKzdroP7qZRNl6DW0r2jhKe4="
     },
     "assembly": {
-      "HomePage.uef8e5a9ij.wasm": "sha256-+h0JUJ6KP8PGk1YwpXbvkcAvgoTOBS+cyX35hQj2mJA=",
+      "HomePage.5euuubrzoo.wasm": "sha256-XU+tl18gx2oi/hpibzVPVYklyOCRqNr5tyCppbrhooU=",
       "Microsoft.AspNetCore.Components.hadr1j2bl3.wasm": "sha256-99Z8/xIbI37hUCSs7RogvrVxAKnToUgOPK1pPqvbfvQ=",
       "Microsoft.AspNetCore.Components.Web.5fnpqqr84r.wasm": "sha256-0fT5DLMa1voamFmX5/f/aY8oct7a5CLEOHu2Tdn6oCA=",
       "Microsoft.AspNetCore.Components.WebAssembly.0prlth0hc4.wasm": "sha256-jB/Gf1i7eXuQqAzqY/ZONe+hrW3x94pYZlL+G0Cv7Co=",

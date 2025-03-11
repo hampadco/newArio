@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "70UAKyyG5dMHed7FkvbeM4ze+zl7dQK4Ps27Eha0XiE=",
+  "Hash": "N8roRk+r4fU7myjex5sGuumnJnoSLFIsNk1wI/wkyZ8=",
   "Source": "HomePage",
   "BasePath": "/",
   "Mode": "Root",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "manifest",
-      "Fingerprint": "kcq9p8edsm",
-      "Integrity": "XBlT0pVyaMf0KUnAwvamCE3xI/fp1AFQiyJNl5npqT4=",
+      "Fingerprint": "sonns0c31t",
+      "Integrity": "rPMy86BevfBQ/Sk+3d9/KTbVJ0QbMdmfSGsnI54tXbk=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Release\\net9.0\\blazor.boot.json"
@@ -199,8 +199,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "3vtpt6xo24",
-      "Integrity": "b4iCeoi4rkNiXRHArWctHg4T5SAeH5cd9DJcj/0IWjg=",
+      "Fingerprint": "p3upwlsmch",
+      "Integrity": "pTglVLYRH45tSp9QAUc8qNO6wRpVar93FRg8N89o4LE=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Release\\net9.0\\HomePage.pdb"
@@ -220,8 +220,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "uef8e5a9ij",
-      "Integrity": "+h0JUJ6KP8PGk1YwpXbvkcAvgoTOBS+cyX35hQj2mJA=",
+      "Fingerprint": "5euuubrzoo",
+      "Integrity": "XU+tl18gx2oi/hpibzVPVYklyOCRqNr5tyCppbrhooU=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\obj\\Release\\net9.0\\webcil\\HomePage.wasm"
@@ -4805,7 +4805,7 @@
       "OriginalItemSpec": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\bin\\Release\\net9.0\\wwwroot\\_framework\\Microsoft.Extensions.Primitives.wasm"
     },
     {
-      "Identity": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\obj\\Release\\net9.0\\compressed\\4vephrdkpu-kcq9p8edsm.gz",
+      "Identity": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\obj\\Release\\net9.0\\compressed\\4vephrdkpu-sonns0c31t.gz",
       "SourceId": "HomePage",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\obj\\Release\\net9.0\\compressed\\",
@@ -4819,8 +4819,8 @@
       "RelatedAsset": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\bin\\Release\\net9.0\\wwwroot\\_framework\\blazor.boot.json",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "pqv57x6ezk",
-      "Integrity": "8Zrbnd61FehoUo9om1mIU18w4dyl3nelGXEqQopi4PQ=",
+      "Fingerprint": "xk48jj2rho",
+      "Integrity": "Mcim1scO0fcWkxGcfBLcRuRx1DcqOvJoRdZJn96spMw=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\bin\\Release\\net9.0\\wwwroot\\_framework\\blazor.boot.json"
@@ -5561,6 +5561,27 @@
       "OriginalItemSpec": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\js\\jquery.mb.YTPlayer.min.js"
     },
     {
+      "Identity": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\obj\\Release\\net9.0\\compressed\\9cuh8l8918-5ipweew5fc.gz",
+      "SourceId": "HomePage",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\obj\\Release\\net9.0\\compressed\\",
+      "BasePath": "/",
+      "RelativePath": "5238445#[.{fingerprint=5ipweew5fc}]?.txt.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\5238445.txt",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "5ipweew5fc",
+      "Integrity": "47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\5238445.txt"
+    },
+    {
       "Identity": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\obj\\Release\\net9.0\\compressed\\9dvtz6g2eu-2xxvg1ez8o.gz",
       "SourceId": "HomePage",
       "SourceType": "Computed",
@@ -5834,12 +5855,12 @@
       "OriginalItemSpec": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\bin\\Release\\net9.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Forms.wasm"
     },
     {
-      "Identity": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\obj\\Release\\net9.0\\compressed\\banh5v3sk9-3vtpt6xo24.gz",
+      "Identity": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\obj\\Release\\net9.0\\compressed\\banh5v3sk9-p3upwlsmch.gz",
       "SourceId": "HomePage",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\obj\\Release\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/HomePage#[.{fingerprint=3vtpt6xo24}]!.pdb.gz",
+      "RelativePath": "_framework/HomePage#[.{fingerprint=p3upwlsmch}]!.pdb.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -5848,8 +5869,8 @@
       "RelatedAsset": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\bin\\Release\\net9.0\\wwwroot\\_framework\\HomePage.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "xcpvcwjdq3",
-      "Integrity": "IQ6McMMvCoARH0QC1eFy5Y6mjLsrRs0WWsEyesk3bGc=",
+      "Fingerprint": "joogpw22gp",
+      "Integrity": "DUZQxpP7XN3y2kRdKD91O9UqLEhfpweO7XStLSptNzM=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\bin\\Release\\net9.0\\wwwroot\\_framework\\HomePage.pdb"
@@ -5876,12 +5897,12 @@
       "OriginalItemSpec": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\bin\\Release\\net9.0\\wwwroot\\_framework\\System.Net.Sockets.wasm"
     },
     {
-      "Identity": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\obj\\Release\\net9.0\\compressed\\bizh1pkqmd-uef8e5a9ij.gz",
+      "Identity": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\obj\\Release\\net9.0\\compressed\\bizh1pkqmd-5euuubrzoo.gz",
       "SourceId": "HomePage",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\obj\\Release\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/HomePage#[.{fingerprint=uef8e5a9ij}]!.wasm.gz",
+      "RelativePath": "_framework/HomePage#[.{fingerprint=5euuubrzoo}]!.wasm.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -5890,8 +5911,8 @@
       "RelatedAsset": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\bin\\Release\\net9.0\\wwwroot\\_framework\\HomePage.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "77livi3831",
-      "Integrity": "LY1SFZ+XT9Ku/G90uWmNYZq0uXOrU5giI05n+BYp0Ts=",
+      "Fingerprint": "zjyi96hrh8",
+      "Integrity": "b9CFbBvrZd1hr2SuYjioo04KH+sX0psCX0DeoUAOWE4=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\bin\\Release\\net9.0\\wwwroot\\_framework\\HomePage.wasm"
@@ -9110,12 +9131,12 @@
       "OriginalItemSpec": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\bin\\Release\\net9.0\\wwwroot\\_framework\\System.Xml.XDocument.wasm"
     },
     {
-      "Identity": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\obj\\Release\\net9.0\\compressed\\zvcwj12alm-tilwgh4nz1.gz",
+      "Identity": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\obj\\Release\\net9.0\\compressed\\zvcwj12alm-hf6xfhm9b2.gz",
       "SourceId": "HomePage",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\obj\\Release\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "index#[.{fingerprint=tilwgh4nz1}]?.html.gz",
+      "RelativePath": "index#[.{fingerprint=hf6xfhm9b2}]?.html.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -9124,8 +9145,8 @@
       "RelatedAsset": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\index.html",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "uijc2tk6qx",
-      "Integrity": "1oPBRvwwTjwTqzQBDpAhZEPnwiyHSHWSiv6ltBTvC9U=",
+      "Fingerprint": "8nlfkqd8ym",
+      "Integrity": "rNg/p28+gqzTsoXDPD1XPWcgq7/72ejE6DOYPObwvBw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\index.html"
@@ -9171,6 +9192,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\obj\\Release\\net9.0\\scopedcss\\projectbundle\\HomePage.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\5238445.txt",
+      "SourceId": "HomePage",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "5238445#[.{fingerprint}]?.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5ipweew5fc",
+      "Integrity": "47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\5238445.txt"
     },
     {
       "Identity": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\css\\animate.min.css",
@@ -10447,8 +10489,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "tilwgh4nz1",
-      "Integrity": "9Sghg2jFS7EmnDq+1c8BitGQHADD5599h4QpYXmohlo=",
+      "Fingerprint": "hf6xfhm9b2",
+      "Integrity": "M2604U4+7bCPd3ne3d2dyUmIPXP0GMcsi2tG+ilrmko=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
@@ -10726,7 +10768,46 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"XBlT0pVyaMf0KUnAwvamCE3xI/fp1AFQiyJNl5npqT4=\""
+          "Value": "\"rPMy86BevfBQ/Sk+3d9/KTbVJ0QbMdmfSGsnI54tXbk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 15:28:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rPMy86BevfBQ/Sk+3d9/KTbVJ0QbMdmfSGsnI54tXbk="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/blazor.boot.json",
+      "AssetFile": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\obj\\Release\\net9.0\\compressed\\4vephrdkpu-sonns0c31t.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000081294204"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12300"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Mcim1scO0fcWkxGcfBLcRuRx1DcqOvJoRdZJn96spMw=\""
         },
         {
           "Name": "Last-Modified",
@@ -10735,45 +10816,6 @@
         {
           "Name": "Cache-Control",
           "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-XBlT0pVyaMf0KUnAwvamCE3xI/fp1AFQiyJNl5npqT4="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/blazor.boot.json",
-      "AssetFile": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\obj\\Release\\net9.0\\compressed\\4vephrdkpu-kcq9p8edsm.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000081280988"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "12302"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"8Zrbnd61FehoUo9om1mIU18w4dyl3nelGXEqQopi4PQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 04:24:20 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -10789,19 +10831,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"XBlT0pVyaMf0KUnAwvamCE3xI/fp1AFQiyJNl5npqT4=\""
+          "Value": "W/\"rPMy86BevfBQ/Sk+3d9/KTbVJ0QbMdmfSGsnI54tXbk=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-XBlT0pVyaMf0KUnAwvamCE3xI/fp1AFQiyJNl5npqT4="
+          "Value": "sha256-rPMy86BevfBQ/Sk+3d9/KTbVJ0QbMdmfSGsnI54tXbk="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json.gz",
-      "AssetFile": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\obj\\Release\\net9.0\\compressed\\4vephrdkpu-kcq9p8edsm.gz",
+      "AssetFile": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\obj\\Release\\net9.0\\compressed\\4vephrdkpu-sonns0c31t.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10810,7 +10852,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12302"
+          "Value": "12300"
         },
         {
           "Name": "Content-Type",
@@ -10818,11 +10860,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"8Zrbnd61FehoUo9om1mIU18w4dyl3nelGXEqQopi4PQ=\""
+          "Value": "\"Mcim1scO0fcWkxGcfBLcRuRx1DcqOvJoRdZJn96spMw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 04:24:20 GMT"
+          "Value": "Thu, 27 Feb 2025 04:24:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10840,7 +10882,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-8Zrbnd61FehoUo9om1mIU18w4dyl3nelGXEqQopi4PQ="
+          "Value": "sha256-Mcim1scO0fcWkxGcfBLcRuRx1DcqOvJoRdZJn96spMw="
         }
       ]
     },
@@ -10906,7 +10948,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 04:24:19 GMT"
+          "Value": "Fri, 17 Jan 2025 20:14:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10959,7 +11001,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 04:24:19 GMT"
+          "Value": "Fri, 17 Jan 2025 20:14:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11051,7 +11093,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 04:24:20 GMT"
+          "Value": "Thu, 16 Jan 2025 19:03:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11112,7 +11154,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 04:24:20 GMT"
+          "Value": "Thu, 16 Jan 2025 19:03:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11204,7 +11246,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 04:24:20 GMT"
+          "Value": "Thu, 16 Jan 2025 19:03:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11304,7 +11346,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 04:24:20 GMT"
+          "Value": "Thu, 16 Jan 2025 19:03:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11365,7 +11407,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 04:24:20 GMT"
+          "Value": "Thu, 16 Jan 2025 19:03:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11418,7 +11460,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 04:24:20 GMT"
+          "Value": "Thu, 16 Jan 2025 19:03:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11502,7 +11544,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 04:24:20 GMT"
+          "Value": "Thu, 16 Jan 2025 19:03:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11555,7 +11597,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 04:24:20 GMT"
+          "Value": "Thu, 16 Jan 2025 19:03:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12335,7 +12377,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 04:24:20 GMT"
+          "Value": "Thu, 16 Jan 2025 19:03:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12396,7 +12438,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 04:24:20 GMT"
+          "Value": "Thu, 16 Jan 2025 19:03:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12533,7 +12575,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 04:24:20 GMT"
+          "Value": "Thu, 16 Jan 2025 19:03:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12586,7 +12628,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 04:24:20 GMT"
+          "Value": "Thu, 16 Jan 2025 19:03:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12770,305 +12812,7 @@
       ]
     },
     {
-      "Route": "_framework/HomePage.3vtpt6xo24.pdb",
-      "AssetFile": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\bin\\Release\\net9.0\\wwwroot\\_framework\\HomePage.pdb",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "25988"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"b4iCeoi4rkNiXRHArWctHg4T5SAeH5cd9DJcj/0IWjg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 04:24:18 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "3vtpt6xo24"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/HomePage.pdb"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-b4iCeoi4rkNiXRHArWctHg4T5SAeH5cd9DJcj/0IWjg="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/HomePage.3vtpt6xo24.pdb",
-      "AssetFile": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\obj\\Release\\net9.0\\compressed\\banh5v3sk9-3vtpt6xo24.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000049845479"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "20061"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"IQ6McMMvCoARH0QC1eFy5Y6mjLsrRs0WWsEyesk3bGc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 04:24:20 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"b4iCeoi4rkNiXRHArWctHg4T5SAeH5cd9DJcj/0IWjg=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "3vtpt6xo24"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/HomePage.pdb"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-b4iCeoi4rkNiXRHArWctHg4T5SAeH5cd9DJcj/0IWjg="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/HomePage.3vtpt6xo24.pdb.gz",
-      "AssetFile": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\obj\\Release\\net9.0\\compressed\\banh5v3sk9-3vtpt6xo24.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "20061"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"IQ6McMMvCoARH0QC1eFy5Y6mjLsrRs0WWsEyesk3bGc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 04:24:20 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "3vtpt6xo24"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/HomePage.pdb.gz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-IQ6McMMvCoARH0QC1eFy5Y6mjLsrRs0WWsEyesk3bGc="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/HomePage.pdb",
-      "AssetFile": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\bin\\Release\\net9.0\\wwwroot\\_framework\\HomePage.pdb",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "25988"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"b4iCeoi4rkNiXRHArWctHg4T5SAeH5cd9DJcj/0IWjg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 04:24:18 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-b4iCeoi4rkNiXRHArWctHg4T5SAeH5cd9DJcj/0IWjg="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/HomePage.pdb",
-      "AssetFile": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\obj\\Release\\net9.0\\compressed\\banh5v3sk9-3vtpt6xo24.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000049845479"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "20061"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"IQ6McMMvCoARH0QC1eFy5Y6mjLsrRs0WWsEyesk3bGc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 04:24:20 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"b4iCeoi4rkNiXRHArWctHg4T5SAeH5cd9DJcj/0IWjg=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-b4iCeoi4rkNiXRHArWctHg4T5SAeH5cd9DJcj/0IWjg="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/HomePage.pdb.gz",
-      "AssetFile": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\obj\\Release\\net9.0\\compressed\\banh5v3sk9-3vtpt6xo24.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "20061"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"IQ6McMMvCoARH0QC1eFy5Y6mjLsrRs0WWsEyesk3bGc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 04:24:20 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-IQ6McMMvCoARH0QC1eFy5Y6mjLsrRs0WWsEyesk3bGc="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/HomePage.uef8e5a9ij.wasm",
+      "Route": "_framework/HomePage.5euuubrzoo.wasm",
       "AssetFile": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\bin\\Release\\net9.0\\wwwroot\\_framework\\HomePage.wasm",
       "Selectors": [],
       "ResponseHeaders": [
@@ -13086,11 +12830,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"+h0JUJ6KP8PGk1YwpXbvkcAvgoTOBS+cyX35hQj2mJA=\""
+          "Value": "\"XU+tl18gx2oi/hpibzVPVYklyOCRqNr5tyCppbrhooU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 04:24:19 GMT"
+          "Value": "Sun, 02 Mar 2025 15:28:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13100,7 +12844,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "uef8e5a9ij"
+          "Value": "5euuubrzoo"
         },
         {
           "Name": "label",
@@ -13108,18 +12852,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-+h0JUJ6KP8PGk1YwpXbvkcAvgoTOBS+cyX35hQj2mJA="
+          "Value": "sha256-XU+tl18gx2oi/hpibzVPVYklyOCRqNr5tyCppbrhooU="
         }
       ]
     },
     {
-      "Route": "_framework/HomePage.uef8e5a9ij.wasm",
-      "AssetFile": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\obj\\Release\\net9.0\\compressed\\bizh1pkqmd-uef8e5a9ij.gz",
+      "Route": "_framework/HomePage.5euuubrzoo.wasm",
+      "AssetFile": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\obj\\Release\\net9.0\\compressed\\bizh1pkqmd-5euuubrzoo.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000077899821"
+          "Quality": "0.000078137209"
         }
       ],
       "ResponseHeaders": [
@@ -13129,15 +12873,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12836"
+          "Value": "12797"
         },
         {
           "Name": "ETag",
-          "Value": "\"LY1SFZ+XT9Ku/G90uWmNYZq0uXOrU5giI05n+BYp0Ts=\""
+          "Value": "\"b9CFbBvrZd1hr2SuYjioo04KH+sX0psCX0DeoUAOWE4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 04:24:20 GMT"
+          "Value": "Sun, 02 Mar 2025 15:28:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13157,13 +12901,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"+h0JUJ6KP8PGk1YwpXbvkcAvgoTOBS+cyX35hQj2mJA=\""
+          "Value": "W/\"XU+tl18gx2oi/hpibzVPVYklyOCRqNr5tyCppbrhooU=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "uef8e5a9ij"
+          "Value": "5euuubrzoo"
         },
         {
           "Name": "label",
@@ -13171,13 +12915,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-+h0JUJ6KP8PGk1YwpXbvkcAvgoTOBS+cyX35hQj2mJA="
+          "Value": "sha256-XU+tl18gx2oi/hpibzVPVYklyOCRqNr5tyCppbrhooU="
         }
       ]
     },
     {
-      "Route": "_framework/HomePage.uef8e5a9ij.wasm.gz",
-      "AssetFile": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\obj\\Release\\net9.0\\compressed\\bizh1pkqmd-uef8e5a9ij.gz",
+      "Route": "_framework/HomePage.5euuubrzoo.wasm.gz",
+      "AssetFile": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\obj\\Release\\net9.0\\compressed\\bizh1pkqmd-5euuubrzoo.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -13186,7 +12930,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12836"
+          "Value": "12797"
         },
         {
           "Name": "Content-Type",
@@ -13194,11 +12938,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"LY1SFZ+XT9Ku/G90uWmNYZq0uXOrU5giI05n+BYp0Ts=\""
+          "Value": "\"b9CFbBvrZd1hr2SuYjioo04KH+sX0psCX0DeoUAOWE4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 04:24:20 GMT"
+          "Value": "Sun, 02 Mar 2025 15:28:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13216,7 +12960,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "uef8e5a9ij"
+          "Value": "5euuubrzoo"
         },
         {
           "Name": "label",
@@ -13224,7 +12968,305 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-LY1SFZ+XT9Ku/G90uWmNYZq0uXOrU5giI05n+BYp0Ts="
+          "Value": "sha256-b9CFbBvrZd1hr2SuYjioo04KH+sX0psCX0DeoUAOWE4="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/HomePage.p3upwlsmch.pdb",
+      "AssetFile": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\bin\\Release\\net9.0\\wwwroot\\_framework\\HomePage.pdb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "25916"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pTglVLYRH45tSp9QAUc8qNO6wRpVar93FRg8N89o4LE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 15:28:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "p3upwlsmch"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/HomePage.pdb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-pTglVLYRH45tSp9QAUc8qNO6wRpVar93FRg8N89o4LE="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/HomePage.p3upwlsmch.pdb",
+      "AssetFile": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\obj\\Release\\net9.0\\compressed\\banh5v3sk9-p3upwlsmch.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000050035025"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "19985"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DUZQxpP7XN3y2kRdKD91O9UqLEhfpweO7XStLSptNzM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 15:28:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"pTglVLYRH45tSp9QAUc8qNO6wRpVar93FRg8N89o4LE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "p3upwlsmch"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/HomePage.pdb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-pTglVLYRH45tSp9QAUc8qNO6wRpVar93FRg8N89o4LE="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/HomePage.p3upwlsmch.pdb.gz",
+      "AssetFile": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\obj\\Release\\net9.0\\compressed\\banh5v3sk9-p3upwlsmch.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "19985"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DUZQxpP7XN3y2kRdKD91O9UqLEhfpweO7XStLSptNzM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 15:28:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "p3upwlsmch"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/HomePage.pdb.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DUZQxpP7XN3y2kRdKD91O9UqLEhfpweO7XStLSptNzM="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/HomePage.pdb",
+      "AssetFile": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\bin\\Release\\net9.0\\wwwroot\\_framework\\HomePage.pdb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "25916"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pTglVLYRH45tSp9QAUc8qNO6wRpVar93FRg8N89o4LE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 15:28:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-pTglVLYRH45tSp9QAUc8qNO6wRpVar93FRg8N89o4LE="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/HomePage.pdb",
+      "AssetFile": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\obj\\Release\\net9.0\\compressed\\banh5v3sk9-p3upwlsmch.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000050035025"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "19985"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DUZQxpP7XN3y2kRdKD91O9UqLEhfpweO7XStLSptNzM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 15:28:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"pTglVLYRH45tSp9QAUc8qNO6wRpVar93FRg8N89o4LE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-pTglVLYRH45tSp9QAUc8qNO6wRpVar93FRg8N89o4LE="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/HomePage.pdb.gz",
+      "AssetFile": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\obj\\Release\\net9.0\\compressed\\banh5v3sk9-p3upwlsmch.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "19985"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DUZQxpP7XN3y2kRdKD91O9UqLEhfpweO7XStLSptNzM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 15:28:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DUZQxpP7XN3y2kRdKD91O9UqLEhfpweO7XStLSptNzM="
         }
       ]
     },
@@ -13247,11 +13289,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"+h0JUJ6KP8PGk1YwpXbvkcAvgoTOBS+cyX35hQj2mJA=\""
+          "Value": "\"XU+tl18gx2oi/hpibzVPVYklyOCRqNr5tyCppbrhooU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 04:24:19 GMT"
+          "Value": "Sun, 02 Mar 2025 15:28:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13261,18 +13303,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-+h0JUJ6KP8PGk1YwpXbvkcAvgoTOBS+cyX35hQj2mJA="
+          "Value": "sha256-XU+tl18gx2oi/hpibzVPVYklyOCRqNr5tyCppbrhooU="
         }
       ]
     },
     {
       "Route": "_framework/HomePage.wasm",
-      "AssetFile": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\obj\\Release\\net9.0\\compressed\\bizh1pkqmd-uef8e5a9ij.gz",
+      "AssetFile": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\obj\\Release\\net9.0\\compressed\\bizh1pkqmd-5euuubrzoo.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000077899821"
+          "Quality": "0.000078137209"
         }
       ],
       "ResponseHeaders": [
@@ -13282,15 +13324,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12836"
+          "Value": "12797"
         },
         {
           "Name": "ETag",
-          "Value": "\"LY1SFZ+XT9Ku/G90uWmNYZq0uXOrU5giI05n+BYp0Ts=\""
+          "Value": "\"b9CFbBvrZd1hr2SuYjioo04KH+sX0psCX0DeoUAOWE4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 04:24:20 GMT"
+          "Value": "Sun, 02 Mar 2025 15:28:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13310,19 +13352,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"+h0JUJ6KP8PGk1YwpXbvkcAvgoTOBS+cyX35hQj2mJA=\""
+          "Value": "W/\"XU+tl18gx2oi/hpibzVPVYklyOCRqNr5tyCppbrhooU=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-+h0JUJ6KP8PGk1YwpXbvkcAvgoTOBS+cyX35hQj2mJA="
+          "Value": "sha256-XU+tl18gx2oi/hpibzVPVYklyOCRqNr5tyCppbrhooU="
         }
       ]
     },
     {
       "Route": "_framework/HomePage.wasm.gz",
-      "AssetFile": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\obj\\Release\\net9.0\\compressed\\bizh1pkqmd-uef8e5a9ij.gz",
+      "AssetFile": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\obj\\Release\\net9.0\\compressed\\bizh1pkqmd-5euuubrzoo.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -13331,7 +13373,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12836"
+          "Value": "12797"
         },
         {
           "Name": "Content-Type",
@@ -13339,11 +13381,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"LY1SFZ+XT9Ku/G90uWmNYZq0uXOrU5giI05n+BYp0Ts=\""
+          "Value": "\"b9CFbBvrZd1hr2SuYjioo04KH+sX0psCX0DeoUAOWE4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 04:24:20 GMT"
+          "Value": "Sun, 02 Mar 2025 15:28:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13361,7 +13403,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-LY1SFZ+XT9Ku/G90uWmNYZq0uXOrU5giI05n+BYp0Ts="
+          "Value": "sha256-b9CFbBvrZd1hr2SuYjioo04KH+sX0psCX0DeoUAOWE4="
         }
       ]
     },
@@ -71178,6 +71220,304 @@
       ]
     },
     {
+      "Route": "5238445.5ipweew5fc.txt",
+      "AssetFile": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\obj\\Release\\net9.0\\compressed\\9cuh8l8918-5ipweew5fc.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "1.000000000000"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 15:24:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5ipweew5fc"
+        },
+        {
+          "Name": "label",
+          "Value": "5238445.txt"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
+    },
+    {
+      "Route": "5238445.5ipweew5fc.txt",
+      "AssetFile": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\5238445.txt",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 15:24:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5ipweew5fc"
+        },
+        {
+          "Name": "label",
+          "Value": "5238445.txt"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
+    },
+    {
+      "Route": "5238445.5ipweew5fc.txt.gz",
+      "AssetFile": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\obj\\Release\\net9.0\\compressed\\9cuh8l8918-5ipweew5fc.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 15:24:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5ipweew5fc"
+        },
+        {
+          "Name": "label",
+          "Value": "5238445.txt.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
+    },
+    {
+      "Route": "5238445.txt",
+      "AssetFile": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\obj\\Release\\net9.0\\compressed\\9cuh8l8918-5ipweew5fc.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "1.000000000000"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 15:24:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
+    },
+    {
+      "Route": "5238445.txt",
+      "AssetFile": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\5238445.txt",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 15:24:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
+    },
+    {
+      "Route": "5238445.txt.gz",
+      "AssetFile": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\obj\\Release\\net9.0\\compressed\\9cuh8l8918-5ipweew5fc.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 15:24:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
+    },
+    {
       "Route": "css/animate.min.1ckajhkykv.css",
       "AssetFile": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\obj\\Release\\net9.0\\compressed\\x9ormr8ecb-1ckajhkykv.gz",
       "Selectors": [
@@ -79070,13 +79410,13 @@
       ]
     },
     {
-      "Route": "index.html",
-      "AssetFile": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\obj\\Release\\net9.0\\compressed\\zvcwj12alm-tilwgh4nz1.gz",
+      "Route": "index.hf6xfhm9b2.html",
+      "AssetFile": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\obj\\Release\\net9.0\\compressed\\zvcwj12alm-hf6xfhm9b2.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001647446458"
+          "Quality": "0.001683501684"
         }
       ],
       "ResponseHeaders": [
@@ -79086,19 +79426,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "606"
+          "Value": "593"
         },
         {
           "Name": "ETag",
-          "Value": "\"1oPBRvwwTjwTqzQBDpAhZEPnwiyHSHWSiv6ltBTvC9U=\""
+          "Value": "\"rNg/p28+gqzTsoXDPD1XPWcgq7/72ejE6DOYPObwvBw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 03:32:38 GMT"
+          "Value": "Sun, 02 Mar 2025 15:27:29 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -79114,18 +79454,26 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"9Sghg2jFS7EmnDq+1c8BitGQHADD5599h4QpYXmohlo=\""
+          "Value": "W/\"M2604U4+7bCPd3ne3d2dyUmIPXP0GMcsi2tG+ilrmko=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "hf6xfhm9b2"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-9Sghg2jFS7EmnDq+1c8BitGQHADD5599h4QpYXmohlo="
+          "Value": "sha256-M2604U4+7bCPd3ne3d2dyUmIPXP0GMcsi2tG+ilrmko="
         }
       ]
     },
     {
-      "Route": "index.html",
+      "Route": "index.hf6xfhm9b2.html",
       "AssetFile": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\index.html",
       "Selectors": [],
       "ResponseHeaders": [
@@ -79135,7 +79483,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1509"
+          "Value": "1507"
         },
         {
           "Name": "Content-Type",
@@ -79143,121 +79491,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"9Sghg2jFS7EmnDq+1c8BitGQHADD5599h4QpYXmohlo=\""
+          "Value": "\"M2604U4+7bCPd3ne3d2dyUmIPXP0GMcsi2tG+ilrmko=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 03:32:38 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-9Sghg2jFS7EmnDq+1c8BitGQHADD5599h4QpYXmohlo="
-        }
-      ]
-    },
-    {
-      "Route": "index.html.gz",
-      "AssetFile": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\obj\\Release\\net9.0\\compressed\\zvcwj12alm-tilwgh4nz1.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "606"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"1oPBRvwwTjwTqzQBDpAhZEPnwiyHSHWSiv6ltBTvC9U=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 03:32:38 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-1oPBRvwwTjwTqzQBDpAhZEPnwiyHSHWSiv6ltBTvC9U="
-        }
-      ]
-    },
-    {
-      "Route": "index.tilwgh4nz1.html",
-      "AssetFile": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\obj\\Release\\net9.0\\compressed\\zvcwj12alm-tilwgh4nz1.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.001647446458"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "606"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"1oPBRvwwTjwTqzQBDpAhZEPnwiyHSHWSiv6ltBTvC9U=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 03:32:38 GMT"
+          "Value": "Sun, 02 Mar 2025 15:27:29 GMT"
         },
         {
           "Name": "Cache-Control",
           "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"9Sghg2jFS7EmnDq+1c8BitGQHADD5599h4QpYXmohlo=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "tilwgh4nz1"
+          "Value": "hf6xfhm9b2"
         },
         {
           "Name": "label",
@@ -79265,13 +79513,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-9Sghg2jFS7EmnDq+1c8BitGQHADD5599h4QpYXmohlo="
+          "Value": "sha256-M2604U4+7bCPd3ne3d2dyUmIPXP0GMcsi2tG+ilrmko="
         }
       ]
     },
     {
-      "Route": "index.tilwgh4nz1.html",
-      "AssetFile": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\index.html",
+      "Route": "index.hf6xfhm9b2.html.gz",
+      "AssetFile": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\obj\\Release\\net9.0\\compressed\\zvcwj12alm-hf6xfhm9b2.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -79280,7 +79528,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1509"
+          "Value": "593"
         },
         {
           "Name": "Content-Type",
@@ -79288,56 +79536,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"9Sghg2jFS7EmnDq+1c8BitGQHADD5599h4QpYXmohlo=\""
+          "Value": "\"rNg/p28+gqzTsoXDPD1XPWcgq7/72ejE6DOYPObwvBw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 03:32:38 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "tilwgh4nz1"
-        },
-        {
-          "Name": "label",
-          "Value": "index.html"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-9Sghg2jFS7EmnDq+1c8BitGQHADD5599h4QpYXmohlo="
-        }
-      ]
-    },
-    {
-      "Route": "index.tilwgh4nz1.html.gz",
-      "AssetFile": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\obj\\Release\\net9.0\\compressed\\zvcwj12alm-tilwgh4nz1.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "606"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"1oPBRvwwTjwTqzQBDpAhZEPnwiyHSHWSiv6ltBTvC9U=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 03:32:38 GMT"
+          "Value": "Sun, 02 Mar 2025 15:27:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -79355,7 +79558,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "tilwgh4nz1"
+          "Value": "hf6xfhm9b2"
         },
         {
           "Name": "label",
@@ -79363,7 +79566,144 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-1oPBRvwwTjwTqzQBDpAhZEPnwiyHSHWSiv6ltBTvC9U="
+          "Value": "sha256-rNg/p28+gqzTsoXDPD1XPWcgq7/72ejE6DOYPObwvBw="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\obj\\Release\\net9.0\\compressed\\zvcwj12alm-hf6xfhm9b2.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001683501684"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "593"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rNg/p28+gqzTsoXDPD1XPWcgq7/72ejE6DOYPObwvBw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 15:27:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"M2604U4+7bCPd3ne3d2dyUmIPXP0GMcsi2tG+ilrmko=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-M2604U4+7bCPd3ne3d2dyUmIPXP0GMcsi2tG+ilrmko="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1507"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"M2604U4+7bCPd3ne3d2dyUmIPXP0GMcsi2tG+ilrmko=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 15:27:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-M2604U4+7bCPd3ne3d2dyUmIPXP0GMcsi2tG+ilrmko="
+        }
+      ]
+    },
+    {
+      "Route": "index.html.gz",
+      "AssetFile": "C:\\Users\\asemn\\Desktop\\Ario\\newArio\\HomePage\\obj\\Release\\net9.0\\compressed\\zvcwj12alm-hf6xfhm9b2.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "593"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rNg/p28+gqzTsoXDPD1XPWcgq7/72ejE6DOYPObwvBw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 15:27:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rNg/p28+gqzTsoXDPD1XPWcgq7/72ejE6DOYPObwvBw="
         }
       ]
     },

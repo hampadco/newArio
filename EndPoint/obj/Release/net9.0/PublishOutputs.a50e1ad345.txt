@@ -8,6 +8,7 @@ C:\Users\asemn\Desktop\Ario\newArio\publishEnd\EndPoint.pdb
 C:\Users\asemn\Desktop\Ario\newArio\publishEnd\Azure.Core.dll
 C:\Users\asemn\Desktop\Ario\newArio\publishEnd\Azure.Identity.dll
 C:\Users\asemn\Desktop\Ario\newArio\publishEnd\Humanizer.dll
+C:\Users\asemn\Desktop\Ario\newArio\publishEnd\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\asemn\Desktop\Ario\newArio\publishEnd\Microsoft.AspNetCore.OpenApi.dll
 C:\Users\asemn\Desktop\Ario\newArio\publishEnd\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\asemn\Desktop\Ario\newArio\publishEnd\Microsoft.Build.Locator.dll

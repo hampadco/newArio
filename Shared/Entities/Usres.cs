@@ -20,8 +20,6 @@ public class User
     [MinLength(6, ErrorMessage = "رمز عبور باید حداقل 6 کاراکتر باشد")]
     public string Password { get; set; }
     public bool Status { get; set; }
-
-
     public List<Transaction>? Transactions { get; set; }
     public int Balance { get; private set; }
 
