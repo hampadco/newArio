@@ -5,7 +5,7 @@
 namespace Shared.Migrations
 {
     /// <inheritdoc />
-    public partial class two : Migration
+    public partial class first2 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

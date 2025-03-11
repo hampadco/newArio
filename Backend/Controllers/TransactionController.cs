@@ -69,4 +69,27 @@ public class TransactionController : Controller
             TraceHistories = histories
         });
     }
+
+    [HttpPost]
+    public IActionResult AddDepositRequest(c2cRequest c2c)
+    {
+        int UserId = Convert.ToInt32(User.FindFirstValue("id"));
+        if (db.DepositRequests.Any(x => x.UserId == UserId && x.IsValid == null && x.CreateDateTime.AddHours(5) > DateTime.Now))
+        {
+            return BadRequest("شما در ساعات گذشته یک درخواست ارسال کردید. لطفا صبر کنید");
+        }
+        DepositRequest request = new DepositRequest
+        {
+            Amount = c2c.Price,
+            CardId = c2c.CardId,
+            ClientCardNumber = c2c.ClientCardNumber,
+            CheckTime = DateTime.Now,
+            CreateDateTime = DateTime.Now,
+            IsValid = null,
+            UserId = Convert.ToInt32(User.FindFirstValue("id"))
+        };
+        db.DepositRequests.Add(request);
+        db.SaveChanges();
+        return Ok("ثبت درخواست با موفقیت انجام شد.");
+    }
 }

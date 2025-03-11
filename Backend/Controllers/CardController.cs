@@ -20,7 +20,8 @@ public class CardController : Controller
         {
             CardBank = newCard.CardBank,
             CardName = newCard.CardName,
-            CardNumber = newCard.CardNumber
+            CardNumber = newCard.CardNumber,
+            IsActive = true
         });
         db.SaveChanges();
         return Ok();
@@ -29,7 +30,7 @@ public class CardController : Controller
     public IActionResult ShowCards()
     {
         List<IncomingCard> results = new List<IncomingCard>();
-        List<Cards> cards = db.Cards.ToList();
+        List<Cards> cards = db.Cards.Where(x => x.IsActive).ToList();
         foreach (Cards card in cards)
         {
             results.Add(new IncomingCard()

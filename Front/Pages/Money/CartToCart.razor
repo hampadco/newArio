@@ -1,6 +1,6 @@
 @page "/CartToCart"
 @layout MainLayout
-
+@inject UserService s
 @inject NavigationManager Navigation
 @using System.Text.Json
 
@@ -20,7 +20,7 @@
         <div class="col text-center align-self-center">
             <h5 class="mb-0">کارت به کارت</h5>
         </div>
-        
+
         <div class="col-auto align-self-center">
             <a href="/profile" class="link text-color-theme" style="color: #FF1C52;">
                 <i class="bi bi-person-circle size-22"></i>
@@ -38,41 +38,40 @@
         <div class="col-12 col-md-6 col-lg-4 mx-auto">
             <div class="card card-light shadow-sm mb-4">
                 <div class="card-body">
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="pincode" placeholder="مقدار شارژ را وارد کنید" @bind=request.Price>
-                            <label for="pincode">مبلغ (تومان)</label>
-                        </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="pincode" placeholder="مقدار شارژ را وارد کنید"
+                            @bind=request.Price>
+                        <label for="pincode">مبلغ (تومان)</label>
+                    </div>
 
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="CardNumber" placeholder="شماره کارت را وارد کنید : " @bind=request.ClientCardNumber>
-                            <label for="CardNumber">شماره کارت</label>
-                        </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="CardNumber" placeholder="شماره کارت را وارد کنید : "
+                            @bind=request.ClientCardNumber>
+                        <label for="CardNumber">شماره کارت</label>
+                    </div>
 
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="ourCard" readonly
-                                @bind=Card.CardNumber>
-                            <label for="ourCard">حساب واریزی</label>
-                        </div>
-                        
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="ourBank" readonly 
-                                @bind=Card.CardBank>
-                            <label for="ourBank">بانک حساب واریزی</label>
-                        </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="ourCard" readonly @bind=Card.CardNumber>
+                        <label for="ourCard">حساب واریزی</label>
+                    </div>
 
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="ourName" readonly 
-                                @bind=Card.CardName>
-                            <label for="ourName">به نام</label>
-                        </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="ourBank" readonly @bind=Card.CardBank>
+                        <label for="ourBank">بانک حساب واریزی</label>
+                    </div>
 
-                        <div class="alert alert-info mt-4 mb-3" role="alert">
-                            <strong>حداقل زمان شارژ موجودی 5 دقیقه می‌باشد.</strong><br>
-                            لطفا صبر نمایید و از دادن گزارش جدید خودداری کنید.
-                        </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="ourName" readonly @bind=Card.CardName>
+                        <label for="ourName">به نام</label>
+                    </div>
 
-                        <div class="d-grid"><a href="changeaddress.html" class="btn btn-lg btn-default shadow-sm">تایید
-                                و ثبت درخواست</a></div>
+                    <div class="alert alert-info mt-4 mb-3" role="alert">
+                        <strong>حداقل زمان شارژ موجودی 5 دقیقه می‌باشد.</strong><br>
+                        لطفا صبر نمایید و از دادن گزارش جدید خودداری کنید.
+                    </div>
+
+                    <div class="d-grid"><button @onclick="() => submit()" class="btn btn-lg btn-default shadow-sm">تایید
+                            و ثبت درخواست</button></div>
                 </div>
             </div>
         </div>
@@ -82,9 +81,21 @@
 @code {
     private IncomingCard Card { get; set; } = new IncomingCard();
     private c2cRequest request = new c2cRequest();
-
-    protected override void OnInitialized()
+    private string token;
+    private async Task submit()
     {
+        await s.DepositRequest(request, token);
+        Navigation.NavigateTo("/home");
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        token = await s.CallToken();
+        if (String.IsNullOrEmpty(token))
+        {
+            Navigation.NavigateTo("/signin");
+        }
+
         var uri = Navigation.ToAbsoluteUri(Navigation.Uri);
         var query = System.Web.HttpUtility.ParseQueryString(uri.Query);
         var cardBase64 = query["card"];

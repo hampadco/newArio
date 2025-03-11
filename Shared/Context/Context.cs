@@ -14,8 +14,9 @@ public class Context : DbContext
     public DbSet<Transaction> Transactions { get; set; }
     public DbSet<Cards> Cards { get; set; }
     public DbSet<Admin> Admins { get; set; }
-    
-    
+    public DbSet<DepositRequest> DepositRequests { get; set; }
+
+
 
     // protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) // سایت
     // {

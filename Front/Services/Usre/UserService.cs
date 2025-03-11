@@ -7,7 +7,7 @@ public class UserService
     private readonly HttpClient _http;
     private readonly IJSRuntime jsRuntime;
     // private readonly string url = "https://api.ariogamefamily.ir";
-    private readonly string url = "http://localhost:5298";
+    private readonly string url = "https://localhost:7198";
 
     public UserService(HttpClient http, IJSRuntime _jsRuntime)
     {
@@ -169,5 +169,11 @@ public class UserService
         }
         await DelToken();
         return new User();
+    }
+
+    public async Task DepositRequest(c2cRequest c2c, string token)
+    {
+        SetToken(token);
+        await _http.PostAsJsonAsync($"{url}/Transaction/AddDepositRequest", c2c);
     }
 }
