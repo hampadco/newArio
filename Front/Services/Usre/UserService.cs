@@ -7,7 +7,7 @@ public class UserService
     private readonly HttpClient _http;
     private readonly IJSRuntime jsRuntime;
     // private readonly string url = "https://api.ariogamefamily.ir";
-    private readonly string url = "https://localhost:7198";
+    private readonly string url = "http://localhost:5092";
 
     public UserService(HttpClient http, IJSRuntime _jsRuntime)
     {

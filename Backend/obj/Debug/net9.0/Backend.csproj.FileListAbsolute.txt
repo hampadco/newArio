@@ -1258,3 +1258,12 @@ C:\Users\asemn\Desktop\Ario\newArio\Backend\obj\Debug\net9.0\compressed\tv0hnzk5
 C:\Users\asemn\Desktop\Ario\newArio\Backend\obj\Debug\net9.0\compressed\q6n2r3a3ph-641f7bzdky.gz
 C:\Users\asemn\Desktop\Ario\newArio\Backend\obj\Debug\net9.0\compressed\u31wdy3615-uerv7oq1kx.gz
 C:\Users\asemn\Desktop\Ario\newArio\Backend\obj\Debug\net9.0\compressed\si9fhsc5iy-r9o2ev8s1t.gz
+C:\Users\asemn\Desktop\Ario\newArio\Backend\bin\Debug\net9.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\asemn\Desktop\Ario\newArio\Backend\bin\Debug\net9.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\asemn\Desktop\Ario\newArio\Backend\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\asemn\Desktop\Ario\newArio\Backend\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\asemn\Desktop\Ario\newArio\Backend\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\asemn\Desktop\Ario\newArio\Backend\bin\Debug\net9.0\Microsoft.Extensions.Logging.dll
+C:\Users\asemn\Desktop\Ario\newArio\Backend\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\asemn\Desktop\Ario\newArio\Backend\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
+C:\Users\asemn\Desktop\Ario\newArio\Backend\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll

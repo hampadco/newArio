@@ -31,4 +31,11 @@ public class PayController : Controller
 
         return View();
     }
+    public IActionResult Index()
+    {
+        var q = db.DepositRequests.Include(x => x.Card).Include(x => x.User).ToList();
+        var pagination = new Pagination<DepositRequest>(q, q.Count, q.Count, 1);
+        ViewBag.pagination = pagination;
+        return View();
+    }
 }
