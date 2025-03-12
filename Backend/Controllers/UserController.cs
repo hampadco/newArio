@@ -54,7 +54,7 @@ public class UserController : Controller
     public IActionResult Getuser()
     {
         int UserId = Convert.ToInt32(User.FindFirstValue("id"));
-        var user = db.Users.Find(UserId);
+        User user = db.Users.Find(UserId)!;
 
         if (user == null)
         {

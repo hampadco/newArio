@@ -1,6 +1,7 @@
 @page "/Withdrawal"
 @layout MainLayout
-
+@inject UserService s
+@inject NavigationManager Navigation
 <header class="container-fluid header">
     <div class="row h-100">
         <div class="col-auto align-self-center">
@@ -17,7 +18,7 @@
         <div class="col text-center align-self-center">
             <h5 class="mb-0">برداشت وجه</h5>
         </div>
-        
+
         <div class="col-auto align-self-center">
             <a href="/profile" class="link text-color-theme" style="color: #FF1C52;">
                 <i class="bi bi-person-circle size-22"></i>
@@ -37,7 +38,7 @@
                         <h5 class="text-color-theme m-3">موجودی حساب</h5>
                     </div>
                     <div class="col-6">
-                        <h5 class="m-3">12000 تومان </h5>
+                        <h5 class="m-3">@Balance تومان </h5>
                     </div>
 
                 </div>
@@ -47,13 +48,13 @@
                 <div class="card-body">
                     <div class="form-floating mb-3">
                         <input type="text" class="form-control" id="pincode"
-                            placeholder="مقدار وجه درخواستی را وارد کنید">
+                            placeholder="مقدار وجه درخواستی را وارد کنید" @bind="Amount">
                         <label for="pincode">مبلغ (تومان)</label>
                     </div>
 
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="CardNumber"
-                            placeholder="شماره کارت را وارد کنید : ">
+                        <input type="text" class="form-control" id="CardNumber" placeholder="شماره کارت را وارد کنید : "
+                            @bind="ClientCardNumber">
                         <label for="CardNumber">شماره کارت</label>
                     </div>
                 </div>
@@ -67,21 +68,36 @@
                     <div class="row mb-4">
                         <div class="col-12">
                             <p class="text-opac">شماره کارت <b>فقط</b> متعلق به ثبت نام شده در اکانت باشد</p>
-                            <p class="text-opac">درصورت ثبت نام ناقص ، لطفا در قسمت<a href="/profile" style="color: black; font-weight: bolder;">
+                            <p class="text-opac">درصورت ثبت نام ناقص ، لطفا در قسمت<a href="/profile"
+                                    style="color: black; font-weight: bolder;">
                                     ویرایش پروفایل</a> اطلاعات رو
                                 کامل کنید</p>
                             <p class="text-opac small">** حداقل برداشت مبلغ 100 هزار تومن میباشد. مبلغ حداکثر تا
                                 24 ساعت به حساب بانکی شما واریز خواهد شد</p>
                         </div>
                     </div>
-                    <div class="d-grid"><a href="changeaddress.html" class="btn btn-lg btn-default shadow-sm">تایید
-                            و ثبت درخواست</a></div>
+                    <div class="d-grid"><button type="submit"
+                            class="btn btn-lg btn-default shadow-sm @(Balance > 100000 ? "" : "disabled")">تایید
+                            و ثبت درخواست</button></div>
                 </div>
             </div>
         </div>
     </div>
-
-
-
-
 </div>
+
+@code {
+    string token = "";
+    private int? Balance = null;
+    private string? Amount;
+    private string? ClientCardNumber;
+    protected override async Task OnInitializedAsync()
+    {
+        token = await s.CallToken();
+        if (String.IsNullOrEmpty(token))
+        {
+            Navigation.NavigateTo("/signin");
+        }
+
+        Balance = (await s.getUser(token)).Balance;
+    }
+}

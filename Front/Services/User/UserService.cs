@@ -8,6 +8,7 @@ public class UserService
     private readonly IJSRuntime jsRuntime;
     // private readonly string url = "https://api.ariogamefamily.ir";
     private readonly string url = "http://localhost:5092";
+    // private readonly string url = "https://localhost:7198";
 
     public UserService(HttpClient http, IJSRuntime _jsRuntime)
     {
@@ -70,7 +71,7 @@ public class UserService
             if (response.IsSuccessStatusCode)
             {
                 var token = await response.Content.ReadFromJsonAsync<tokenJwt>();
-                await jsRuntime.InvokeVoidAsync("localStorage.setItem", "jwtToken", token.Token);
+                await jsRuntime.InvokeVoidAsync("localStorage.setItem", "jwtToken", token!.Token);
                 // اگر پاسخ موفقیت‌آمیز بود، نتیجه true برمی‌گردد
                 return true;
             }
@@ -175,5 +176,10 @@ public class UserService
     {
         SetToken(token);
         await _http.PostAsJsonAsync($"{url}/Transaction/AddDepositRequest", c2c);
+    }
+    public async Task WithdrawalRequest(string token, string Amount, string ClientCardNumber)
+    {
+        SetToken(token);
+        await _http.PostAsJsonAsync($"{url}/Transaction/AddWithdrawalRequest", new { Amount, ClientCardNumber });
     }
 }

@@ -67,4 +67,73 @@ public class TransactionController : Controller
         db.SaveChanges();
         return Ok("ثبت درخواست با موفقیت انجام شد.");
     }
+    [HttpPost]
+    public IActionResult AddWithdrawalRequest(string Amount, string ClientCardNumber)
+    {
+        int UserId = Convert.ToInt32(User.FindFirstValue("id"));
+        int AmountNum = Convert.ToInt32(Amount);
+
+        User user = db.Users.Include(x => x.Transactions).FirstOrDefault(x => x.Id == UserId)!;
+        user.CheckBalance();
+
+        if (user.Balance < AmountNum)
+        {
+            db.Users.Update(user);
+            db.SaveChanges();
+            return BadRequest("مبلغ درخواستی بیشتر از کیف پول میباشد.");
+        }
+
+        NewTransaction transaction = new NewTransaction
+        {
+            Amount = AmountNum,
+            Details = "کاهش موجودی به موجب برداشت وجه",
+            Description = $"کاربر {user.Name} با نام کاربری {user.UserName} مبلغ {AmountNum} تومان از {user.Balance} تومان موجودی خویش را دریافت کرد. مبلغ ذکر شده به حسابی با شماره {ClientCardNumber} واریز شد. ",
+            Type = TransactionType.Withdrawal,
+            UserId = UserId
+        };
+
+        var result = AddTransaction(transaction);
+
+        if (result is not OkResult)
+        {
+            var badRequestResult = result as BadRequestObjectResult;
+            TempData["Error"] = badRequestResult?.Value?.ToString() ?? "خطایی رخ داده است.";
+            return RedirectToAction("Index");
+        }
+        WithdrawalRequest withdrawalRequest = new WithdrawalRequest
+        {
+            Amount = Amount,
+            ClientCardNumber = ClientCardNumber,
+            CreateDateTime = DateTime.Now,
+            CheckTime = DateTime.Now,
+            UserId = UserId,
+            IsValid = false
+        };
+        db.WithdrawalRequests.Add(withdrawalRequest);
+        db.SaveChanges();
+        return Ok("با موفقیت انجام شد");
+    }
+    private IActionResult AddTransaction(NewTransaction Transaction)
+    {
+        try
+        {
+            User user = db.Users.Include(x => x.Transactions).FirstOrDefault(x => x.Id == Transaction.UserId)!;
+
+            if (Transaction.Type == TransactionType.Deposit)
+            {
+                user.Deposit(db, Transaction.Amount, Transaction.Description, Transaction.Details);
+            }
+
+            else
+            {
+                user.CheckBalance();
+                user.Withdraw(db, Transaction.Amount, Transaction.Description, Transaction.Details);
+            }
+            return Ok();
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(ex.Message);
+        }
+    }
 }

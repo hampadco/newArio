@@ -15,6 +15,7 @@ public class Context : DbContext
     public DbSet<Cards> Cards { get; set; }
     public DbSet<Admin> Admins { get; set; }
     public DbSet<DepositRequest> DepositRequests { get; set; }
+    public DbSet<WithdrawalRequest> WithdrawalRequests { get; set; }
 
 
 

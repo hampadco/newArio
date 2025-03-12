@@ -21,7 +21,7 @@ public class User
     public string Password { get; set; } = null!;
     public bool Status { get; set; }
     public List<Transaction>? Transactions { get; set; }
-    public int Balance { get; private set; }
+    public int Balance { get; set; }
 
     public void Deposit(Context db, int amount, string Description, string Details)
     {
