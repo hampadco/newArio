@@ -30,14 +30,14 @@
                     <table class="table table-hover">
                         <thead>
                             <tr>
-                                <th scope="col" style="white-space: nowrap;" class="text-center">ردیف</th>
-                                <th scope="col" style="white-space: nowrap;" class="text-center">نام</th>
-                                <th scope="col" style="white-space: nowrap;" class="text-center">نام کاربری</th>
-                                <th scope="col" style="white-space: nowrap;" class="text-center">شماره کارت مشتری</th>
-                                <th scope="col" style="white-space: nowrap;" class="text-center">شماره کارت واریزی</th>
-                                <th scope="col" style="white-space: nowrap;" class="text-center">مبلغ</th>
-                                <th scope="col" style="white-space: nowrap;" class="text-center">تاریخ / ساعت</th>
-                                <th scope="col" style="white-space: nowrap;" class="text-center">عملیات</th>
+                                <th scope="col" style="white-space: nowrap;">ردیف</th>
+                                <th scope="col" style="white-space: nowrap;">نام</th>
+                                <th scope="col" style="white-space: nowrap;">نام کاربری</th>
+                                <th scope="col" style="white-space: nowrap;">شماره کارت مشتری</th>
+                                <th scope="col" style="white-space: nowrap;">شماره کارت واریزی</th>
+                                <th scope="col" style="white-space: nowrap;">مبلغ</th>
+                                <th scope="col" style="white-space: nowrap;">تاریخ / ساعت</th>
+                                <th scope="col" style="white-space: nowrap;">وضعیت</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -55,7 +55,8 @@
                                         <td style="white-space: nowrap;">@item.Amount</td>
                                         <td style="white-space: nowrap;"><span
                                                 class="time24hr">@PersianDate.ToPersianDateString(item.CreateDateTime)
-                                                [@item.CreateDateTime.Hour:@item.CreateDateTime.Minute]</span></td>
+                                                [@(item.CreateDateTime.Hour.ToString().Count() == 1 ? $"0{item.CreateDateTime.Hour}" : item.CreateDateTime.Hour):@(item.CreateDateTime.Minute.ToString().Count() == 1 ? $"0{item.CreateDateTime.Minute}" : item.CreateDateTime.Minute)]</span>
+                                        </td>
                                         <td style="white-space: nowrap;">
                                             @if (item.IsValid == null)
                                             {
@@ -74,11 +75,15 @@
                                             }
                                             else if (item.IsValid == true)
                                             {
-                                                <span class="badge bg-success">فعال</span>
+                                                <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#Modal@(item.Id)">
+                                                    تایید شده
+                                                </button>
                                             }
                                             else if (item.IsValid == false)
                                             {
-                                                <span class="badge bg-danger">غیرفعال</span>
+                                                <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#Modal@(item.Id)">
+                                                    رد شده
+                                                </button>
                                             }
                                         </td>
                                         @* <td>
@@ -172,7 +177,7 @@
                     <div class="modal-header">
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <form>
+                    <form method="post" action="/Pay/DepositReview">
                         <div class="modal-body onboarding-horizontal p-0">
                             <div class="onboarding-content mb-0">
                                 <h4 class="onboarding-title text-body secondary-font">بررسی درخواست واریزی</h4>
@@ -208,32 +213,59 @@
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <div class="mb-3">
-                                            <label for="messageEx7" class="form-label">توضیحات <span class="text-danger">*</span></label>
-                                            <textarea class="form-control" id="messageEx7" rows="5"
+                                            <label for="messageEx7" class="form-label">توضیحات <span
+                                                    class="text-danger">*</span></label>
+                                            <textarea class="form-control" id="messageEx7" rows="4" name="msg"
                                                 placeholder="توضیحات را وارد کنید ..."
-                                                required>کاربر با نام @item.User.Name و نام کاربری @item.User.UserName در تاریخ @PersianDate.ToPersianDateString(item.CreateDateTime) در ساعت @item.CreateDateTime.Hour:@item.CreateDateTime.Minute مبلغ @item.Amount تومان را از حسابی با شماره کارت @item.ClientCardNumber به حساب مجموعه با شماره @item.Card.CardNumber (@item.Card.CardBank / @item.Card.CardName) واریزی کرده است</textarea>
+                                                required>کاربر با نام @item.User.Name و نام کاربری @item.User.UserName در تاریخ @PersianDate.ToPersianDateString(item.CreateDateTime) در ساعت @(item.CreateDateTime.Hour.ToString().Count() == 1 ? $"0{item.CreateDateTime.Hour}" : item.CreateDateTime.Hour):@(item.CreateDateTime.Minute.ToString().Count() == 1 ? $"0{item.CreateDateTime.Minute}" : item.CreateDateTime.Minute) مبلغ @item.Amount تومان را از حسابی با شماره کارت @item.ClientCardNumber به حساب مجموعه با شماره @item.Card.CardNumber (@item.Card.CardBank / @item.Card.CardName) واریزی کرده است</textarea>
                                         </div>
                                     </div>
+                                    <input type="hidden" value="@item.Id" name="Id">
                                 </div>
                             </div>
                         </div>
                         <div class="modal-footer border-0 d-flex align-items-center">
                             <div class="me-3">
                                 <label for="roleEx7" class="form-label mb-0">وضعیت <span class="text-danger">*</span></label>
-                                <select class="form-select" tabindex="0" id="roleEx7"
+                                <select class="form-select" tabindex="0" id="roleEx7" name="IsValid"
                                     style="display: inline-block; width: auto;">
-                                    <option>تایید</option>
-                                    <option>رد</option>
+                                    <option value="true" selected>تایید</option>
+                                    <option value="false">رد</option>
                                 </select>
                             </div>
                             <div class="ms-auto">
                                 <button type="button" class="btn btn-label-secondary" data-bs-dismiss="modal">
                                     بستن
                                 </button>
-                                <button type="button" class="btn btn-success">ثبت</button>
+                                <button type="submit" class="btn btn-success">ثبت</button>
                             </div>
                         </div>
                     </form>
+                </div>
+            </div>
+        </div>
+    }
+    else{
+        <div class="modal-onboarding modal fade animate__animated" id="Modal@(item.Id)" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content text-center">
+                    <p class="text-muted close-label ms-5">بازبینی در تاریخ : @PersianDate.ToPersianDateString(item.CheckTime) [@(item.CheckTime.Hour.ToString().Count() == 1 ? $"0{item.CheckTime.Hour}" : item.CheckTime.Hour):@(item.CheckTime.Minute.ToString().Count() == 1 ? $"0{item.CheckTime.Minute}" : item.CheckTime.Minute)]</p>
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body ">
+                        <div class="onboarding-content mb-0">
+                            <h4 class="onboarding-title text-body secondary-font">مشاهده توضیحات :</h4>
+                            <div class="onboarding-info lh-2">
+                                @item.Description
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer border-0">
+                        <button type="button" class="btn btn-label-secondary" data-bs-dismiss="modal">
+                        بستن
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>

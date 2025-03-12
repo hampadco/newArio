@@ -17,31 +17,6 @@ public class TransactionController : Controller
         db = _db;
     }
 
-    [HttpPost]
-    public IActionResult AddTransaction(NewTransaction Transaction)
-    {
-        try
-        {
-            User user = db.Users.Include(x => x.Transactions).FirstOrDefault(x => x.Id == Transaction.UserId)!;
-
-            if (Transaction.Type == TransactionType.Deposit)
-            {
-                user.Deposit(db, Transaction.Amount, Transaction.Description, Transaction.Details);
-            }
-
-            else
-            {
-                user.CheckBalance();
-                user.Withdraw(db, Transaction.Amount, Transaction.Description, Transaction.Details);
-            }
-            return Ok();
-        }
-        catch (Exception ex)
-        {
-            return BadRequest(ex.Message);
-        }
-    }
-
     [HttpGet]
     public IActionResult ViewTransactions()
     {

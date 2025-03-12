@@ -33,9 +33,63 @@ public class PayController : Controller
     }
     public IActionResult Index()
     {
-        var q = db.DepositRequests.Include(x => x.Card).Include(x => x.User).ToList();
+        var q = db.DepositRequests.Include(x => x.Card).Include(x => x.User).OrderByDescending(x => x.Id).ToList();
         var pagination = new Pagination<DepositRequest>(q, q.Count, q.Count, 1);
         ViewBag.pagination = pagination;
         return View();
+    }
+    [HttpPost]
+    public IActionResult DepositReview(int Id, string msg, bool IsValid)
+    {
+        var q = db.DepositRequests.Find(Id)!;
+        q.IsValid = IsValid;
+        q.Description = msg;
+        q.CheckTime = DateTime.Now;
+        db.DepositRequests.Update(q);
+        db.SaveChanges();
+
+        NewTransaction transaction = new NewTransaction
+        {
+            Amount = Convert.ToInt32(q.Amount),
+            Description = "افزایش موجودی از طریق کارت به کارت",
+            Details = q.Description,
+            Type = TransactionType.Deposit,
+            UserId = q.UserId
+        };
+
+        var result = AddTransaction(transaction);
+        if (result is OkResult)
+        {
+            return RedirectToAction("Index");
+        }
+        else
+        {
+            var badRequestResult = result as BadRequestObjectResult;
+            TempData["Error"] = badRequestResult?.Value?.ToString() ?? "خطایی رخ داده است.";
+            return RedirectToAction("Index");
+        }
+    }
+    private IActionResult AddTransaction(NewTransaction Transaction)
+    {
+        try
+        {
+            User user = db.Users.Include(x => x.Transactions).FirstOrDefault(x => x.Id == Transaction.UserId)!;
+
+            if (Transaction.Type == TransactionType.Deposit)
+            {
+                user.Deposit(db, Transaction.Amount, Transaction.Description, Transaction.Details);
+            }
+
+            else
+            {
+                user.CheckBalance();
+                user.Withdraw(db, Transaction.Amount, Transaction.Description, Transaction.Details);
+            }
+            return Ok();
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(ex.Message);
+        }
     }
 }
