@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Shared.Migrations;
 
 [Authorize]
 public class PayController : Controller
@@ -38,6 +39,49 @@ public class PayController : Controller
         ViewBag.pagination = pagination;
         return View();
     }
+    public IActionResult Withdraw()
+    {
+        var q = db.WithdrawalRequests.Include(x => x.User).OrderByDescending(x => x.Id).ToList();
+        var pagination = new Pagination<WithdrawalRequest>(q, q.Count, q.Count, 1);
+        ViewBag.pagination = pagination;
+        return View();
+    }
+    public IActionResult Cards()
+    {
+        var q = db.Cards.OrderByDescending(x => x.Id).ToList();
+        var pagination = new Pagination<Cards>(q, q.Count, q.Count, 1);
+        ViewBag.pagination = pagination;
+        return View();
+    }
+    public IActionResult CardStatus(int Id)
+    {
+        var q = db.Cards.Find(Id);
+        if (q != null)
+        {
+            q.IsActive = !q.IsActive;
+            db.Cards.Update(q);
+            db.SaveChanges();
+        }
+        return RedirectToAction("Cards");
+    }
+    public IActionResult NewCard()
+    {
+        return View();
+    }
+
+    [HttpPost]
+    public IActionResult WithdrawReview(int Id, string msg)
+    {
+        var q = db.WithdrawalRequests.Include(x => x.Transaction)!.FirstOrDefault(x => x.Id == Id);
+        q!.IsValid = true;
+        q.Description = msg;
+        q.CheckTime = DateTime.Now;
+        q.Transaction!.Details = q.Description;
+        db.WithdrawalRequests.Update(q);
+        db.SaveChanges();
+        return RedirectToAction("Withdraw");
+    }
+
     [HttpPost]
     public IActionResult DepositReview(int Id, string msg, bool IsValid)
     {
@@ -69,6 +113,21 @@ public class PayController : Controller
             return RedirectToAction("Index");
         }
     }
+
+    [HttpPost]
+    public IActionResult AddCard(NewCard newCard)
+    {
+        db.Cards.Add(new Cards
+        {
+            CardBank = newCard.CardBank,
+            CardName = newCard.CardName,
+            CardNumber = newCard.CardNumber,
+            IsActive = true
+        });
+        db.SaveChanges();
+        return RedirectToAction("Cards");
+    }
+
     private IActionResult AddTransaction(NewTransaction Transaction)
     {
         try

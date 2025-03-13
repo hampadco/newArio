@@ -12,5 +12,7 @@ public class WithdrawalRequest
     public DateTime CreateDateTime { get; set; }
     public DateTime CheckTime { get; set; }
     public bool? IsValid { get; set; }
+    public int? TransactionId { get; set; }
+    public Transaction? Transaction { get; set; }
 
 }

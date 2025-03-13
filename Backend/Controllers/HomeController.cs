@@ -82,7 +82,7 @@ public class HomeController : Controller
         };
         await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity), authProperties);
 
-        ViewBag.Result = "شما وارد شدید";
-        return View();
+        TempData["success"] = "سلام ! به پنل مدیریت خوش آمدید.";
+        return RedirectToAction("index");
     }
 }

@@ -76,7 +76,7 @@
                                 24 ساعت به حساب بانکی شما واریز خواهد شد</p>
                         </div>
                     </div>
-                    <div class="d-grid"><button type="submit"
+                    <div class="d-grid"><button type="button" @onclick="() => SendRequest()"
                             class="btn btn-lg btn-default shadow-sm @(Balance > 100000 ? "" : "disabled")">تایید
                             و ثبت درخواست</button></div>
                 </div>
@@ -99,5 +99,11 @@
         }
 
         Balance = (await s.getUser(token)).Balance;
+    }
+    private async Task SendRequest()
+    {
+        if (Amount != null && ClientCardNumber != null)
+            await s.WithdrawalRequest(token, Amount, ClientCardNumber);
+        Navigation.NavigateTo("/Home");
     }
 }

@@ -7,6 +7,13 @@
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
         }
+        @if (TempData["Success"] != null)
+        {
+            <div class="alert alert-solid-success alert-dismissible d-flex align-items-center" role="alert">
+                @TempData["Success"]
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        }
         @* table show list category and delete and edit *@
         <div class="card mb-4 table-responsive">
             <div class="card-header d-flex align-items-center justify-content-between">

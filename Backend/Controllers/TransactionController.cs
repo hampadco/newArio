@@ -1,6 +1,7 @@
 using System.Data.Common;
 using System.Globalization;
 using System.Security.Claims;
+using Extensions;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -26,7 +27,7 @@ public class TransactionController : Controller
         PersianCalendar pc = new PersianCalendar();
         if (user.Transactions != null)
         {
-            foreach (Transaction item in user.Transactions)
+            foreach (Transaction item in user.Transactions.OrderByDescending(x=>x.Id))
             {
                 histories.Add(new TraceHistory
                 {
@@ -34,6 +35,7 @@ public class TransactionController : Controller
                     Amount = item.Amount,
                     Date = $"{pc.GetYear(item.CreateDateTime)}/{pc.GetMonth(item.CreateDateTime)}/{pc.GetDayOfMonth(item.CreateDateTime)}",
                     Title = item.Description,
+                    Description = item.Details,
                     type = item.Type
                 });
             }
@@ -67,11 +69,12 @@ public class TransactionController : Controller
         db.SaveChanges();
         return Ok("ثبت درخواست با موفقیت انجام شد.");
     }
+
     [HttpPost]
-    public IActionResult AddWithdrawalRequest(string Amount, string ClientCardNumber)
+    public IActionResult AddWithdrawalRequest(c2cRequest c2c)
     {
         int UserId = Convert.ToInt32(User.FindFirstValue("id"));
-        int AmountNum = Convert.ToInt32(Amount);
+        int AmountNum = Convert.ToInt32(c2c.Price);
 
         User user = db.Users.Include(x => x.Transactions).FirstOrDefault(x => x.Id == UserId)!;
         user.CheckBalance();
@@ -82,12 +85,18 @@ public class TransactionController : Controller
             db.SaveChanges();
             return BadRequest("مبلغ درخواستی بیشتر از کیف پول میباشد.");
         }
+        else if (AmountNum < 100000)
+        {
+            db.Users.Update(user);
+            db.SaveChanges();
+            return BadRequest("مبلغ درخواستی کمتر از صد هزار تومان میباشد.");
+        }
 
         NewTransaction transaction = new NewTransaction
         {
             Amount = AmountNum,
-            Details = "کاهش موجودی به موجب برداشت وجه",
-            Description = $"کاربر {user.Name} با نام کاربری {user.UserName} مبلغ {AmountNum} تومان از {user.Balance} تومان موجودی خویش را دریافت کرد. مبلغ ذکر شده به حسابی با شماره {ClientCardNumber} واریز شد. ",
+            Description = "کاهش موجودی به موجب برداشت وجه",
+            Details = $"کاربر {user.Name} با نام کاربری {user.UserName} در تاریخ {PersianDate.ToPersianDateString(DateTime.Now)} ساعت {(DateTime.Now.Hour.ToString().Count() == 1 ? $"0{DateTime.Now.Hour}" : DateTime.Now.Hour)}:{(DateTime.Now.Minute.ToString().Count() == 1 ? $"0{DateTime.Now.Minute}" : DateTime.Now.Minute)} مبلغ {AmountNum} تومان از {user.Balance} تومان موجودی خویش را درخواست کرد. مبلغ ذکر شده به حسابی با شماره {c2c.ClientCardNumber} واریز خواهد شد. ",
             Type = TransactionType.Withdrawal,
             UserId = UserId
         };
@@ -102,12 +111,14 @@ public class TransactionController : Controller
         }
         WithdrawalRequest withdrawalRequest = new WithdrawalRequest
         {
-            Amount = Amount,
-            ClientCardNumber = ClientCardNumber,
+            Amount = c2c.Price,
+            ClientCardNumber = c2c.ClientCardNumber,
             CreateDateTime = DateTime.Now,
             CheckTime = DateTime.Now,
             UserId = UserId,
-            IsValid = false
+            IsValid = false,
+            Description = transaction.Details,
+            TransactionId = user.Transactions!.OrderByDescending(x=>x.Id).FirstOrDefault()!.Id
         };
         db.WithdrawalRequests.Add(withdrawalRequest);
         db.SaveChanges();

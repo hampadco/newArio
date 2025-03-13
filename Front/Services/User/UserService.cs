@@ -180,6 +180,7 @@ public class UserService
     public async Task WithdrawalRequest(string token, string Amount, string ClientCardNumber)
     {
         SetToken(token);
-        await _http.PostAsJsonAsync($"{url}/Transaction/AddWithdrawalRequest", new { Amount, ClientCardNumber });
+        await _http.PostAsJsonAsync($"{url}/Transaction/AddWithdrawalRequest", new c2cRequest{ClientCardNumber = ClientCardNumber , Price = Amount});
+        
     }
 }

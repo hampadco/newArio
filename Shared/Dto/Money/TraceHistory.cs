@@ -4,6 +4,7 @@ public class TraceHistory
     public string Title { get; set; } = null!;
     public int Amount { get; set; }
     public string Date { get; set; } = null!;
+    public string Description { get; set; } = null!;
     public TransactionType type { get; set; }
 }
 public class Traces

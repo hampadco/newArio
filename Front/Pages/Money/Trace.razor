@@ -49,8 +49,8 @@
                         <li class="list-group-item">
                             <div class="row">
                                 <div class="col">
-                                    <p class="mb-1 fw-bold">@trace.Title</p>
-                                    <p class="text-opac">@trace.Date</p>
+                                    <p class="mb-1 fw-bold">@trace.Title [@trace.Date]</p>
+                                    <p class="text-opac"> @trace.Description</p>
                                 </div>
                                 <div class="col-auto mt-3">@trace.Amount
                                     @if (trace.type == TransactionType.Withdrawal)

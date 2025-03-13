@@ -4,9 +4,15 @@ public class Context : DbContext
 {
 
     //ctor
-    public Context(DbContextOptions<Context> options) : base(options)
-    {
+    public Context(DbContextOptions<Context> options) : base(options) { }
 
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Entity<WithdrawalRequest>()
+            .HasOne(w => w.Transaction)
+            .WithOne()
+            .HasForeignKey<WithdrawalRequest>(w => w.TransactionId)
+            .OnDelete(DeleteBehavior.Restrict);
     }
 
 

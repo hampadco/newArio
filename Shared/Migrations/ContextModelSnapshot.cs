@@ -214,10 +214,17 @@ namespace Shared.Migrations
                     b.Property<bool?>("IsValid")
                         .HasColumnType("bit");
 
+                    b.Property<int?>("TransactionId")
+                        .HasColumnType("int");
+
                     b.Property<int>("UserId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("TransactionId")
+                        .IsUnique()
+                        .HasFilter("[TransactionId] IS NOT NULL");
 
                     b.HasIndex("UserId");
 
@@ -256,11 +263,18 @@ namespace Shared.Migrations
 
             modelBuilder.Entity("WithdrawalRequest", b =>
                 {
+                    b.HasOne("Transaction", "Transaction")
+                        .WithOne()
+                        .HasForeignKey("WithdrawalRequest", "TransactionId")
+                        .OnDelete(DeleteBehavior.Restrict);
+
                     b.HasOne("User", "User")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Transaction");
 
                     b.Navigation("User");
                 });

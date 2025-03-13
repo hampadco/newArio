@@ -478,3 +478,12 @@ C:\Users\asemn\Desktop\Ario\newArio\EndPoint\obj\Debug\net9.0\refint\EndPoint.dl
 C:\Users\asemn\Desktop\Ario\newArio\EndPoint\obj\Debug\net9.0\EndPoint.pdb
 C:\Users\asemn\Desktop\Ario\newArio\EndPoint\obj\Debug\net9.0\EndPoint.genruntimeconfig.cache
 C:\Users\asemn\Desktop\Ario\newArio\EndPoint\obj\Debug\net9.0\ref\EndPoint.dll
+C:\Users\asemn\Desktop\Ario\newArio\EndPoint\bin\Debug\net9.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\asemn\Desktop\Ario\newArio\EndPoint\bin\Debug\net9.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\asemn\Desktop\Ario\newArio\EndPoint\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\asemn\Desktop\Ario\newArio\EndPoint\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\asemn\Desktop\Ario\newArio\EndPoint\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\asemn\Desktop\Ario\newArio\EndPoint\bin\Debug\net9.0\Microsoft.Extensions.Logging.dll
+C:\Users\asemn\Desktop\Ario\newArio\EndPoint\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\asemn\Desktop\Ario\newArio\EndPoint\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
+C:\Users\asemn\Desktop\Ario\newArio\EndPoint\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll

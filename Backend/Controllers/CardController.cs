@@ -13,19 +13,6 @@ public class CardController : Controller
         db = _db;
     }
 
-    [HttpPost]
-    public IActionResult AddCard(NewCard newCard)
-    {
-        db.Cards.Add(new Cards
-        {
-            CardBank = newCard.CardBank,
-            CardName = newCard.CardName,
-            CardNumber = newCard.CardNumber,
-            IsActive = true
-        });
-        db.SaveChanges();
-        return Ok();
-    }
     [HttpGet]
     public IActionResult ShowCards()
     {
